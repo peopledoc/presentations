@@ -70,7 +70,7 @@
             </aside>
             
             <aside class="page_number">
-              1/18
+              1/21
             </aside>
           </footer>
         </div>
@@ -99,7 +99,7 @@
             </aside>
             
             <aside class="page_number">
-              2/18
+              2/21
             </aside>
           </footer>
         </div>
@@ -126,7 +126,7 @@
             </aside>
             
             <aside class="page_number">
-              3/18
+              3/21
             </aside>
           </footer>
         </div>
@@ -153,7 +153,7 @@
             </aside>
             
             <aside class="page_number">
-              4/18
+              4/21
             </aside>
           </footer>
         </div>
@@ -181,7 +181,7 @@
             </aside>
             
             <aside class="page_number">
-              5/18
+              5/21
             </aside>
           </footer>
         </div>
@@ -207,7 +207,7 @@
             </aside>
             
             <aside class="page_number">
-              6/18
+              6/21
             </aside>
           </footer>
         </div>
@@ -231,7 +231,7 @@
             </aside>
             
             <aside class="page_number">
-              7/18
+              7/21
             </aside>
           </footer>
         </div>
@@ -253,7 +253,7 @@
             </aside>
             
             <aside class="page_number">
-              8/18
+              8/21
             </aside>
           </footer>
         </div>
@@ -285,7 +285,7 @@
             </aside>
             
             <aside class="page_number">
-              9/18
+              9/21
             </aside>
           </footer>
         </div>
@@ -316,7 +316,7 @@
             </aside>
             
             <aside class="page_number">
-              10/18
+              10/21
             </aside>
           </footer>
         </div>
@@ -346,7 +346,7 @@
             </aside>
             
             <aside class="page_number">
-              11/18
+              11/21
             </aside>
           </footer>
         </div>
@@ -377,7 +377,7 @@
             </aside>
             
             <aside class="page_number">
-              12/18
+              12/21
             </aside>
           </footer>
         </div>
@@ -404,7 +404,7 @@
             </aside>
             
             <aside class="page_number">
-              13/18
+              13/21
             </aside>
           </footer>
         </div>
@@ -428,7 +428,7 @@
             </aside>
             
             <aside class="page_number">
-              14/18
+              14/21
             </aside>
           </footer>
         </div>
@@ -457,7 +457,7 @@
             </aside>
             
             <aside class="page_number">
-              15/18
+              15/21
             </aside>
           </footer>
         </div>
@@ -468,7 +468,7 @@
         <div class="slide title">
           <div class="inner">
             
-            <header><h1>Prêt ? On y va</h1></header>
+            <header><h1>Python de A à M</h1></header>
             
             
           </div>
@@ -479,7 +479,7 @@
             </aside>
             
             <aside class="page_number">
-              16/18
+              16/21
             </aside>
           </footer>
         </div>
@@ -514,7 +514,7 @@
             </aside>
             
             <aside class="page_number">
-              17/18
+              17/21
             </aside>
           </footer>
         </div>
@@ -537,7 +537,12 @@
 <div class="highlight"><pre><span class="lineno">1</span> ipython
 </pre></div>
 
-<p>Essayer les exemples de la page suivante : <a href="http://docs.python.org/tutorial/introduction.html#using-python-as-a-calculator">http://docs.python.org/tutorial/introduction.html#using-python-as-a-calculator</a>.</p></section>
+<p>Il n'est pas nécessaire d'afficher le résultat d'appel aux fonctions quand on utilise l'interpréteur interactif, par exemple :</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="lineno">2</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span>
+</pre></div>
+
+<p>Le résultat attendu peut-être surprenant, mais la fonction type n'affiche rien du tout, c'est l'interpréteur qui l'affiche. (Ipython différencie les affichages normaux des retours fonction).</p></section>
             
           </div>
           <footer>
@@ -547,7 +552,119 @@
             </aside>
             
             <aside class="page_number">
-              18/18
+              18/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/02_plongeon.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h2>Quelques fonctions utiles</h2></header>
+            
+            
+            <section><p>Obtenir le type d'une variable :</p>
+<h1>Type</h1>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="lineno">2</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span>
+<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="s">&#39;&#39;</span><span class="p">)</span>
+<span class="lineno">4</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
+<span class="lineno">5</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="bp">None</span><span class="p">)</span>
+<span class="lineno">6</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;NoneType&#39;</span><span class="o">&gt;</span>
+</pre></div>
+
+<p>Obtenir l'identifiant d'une variable :</p>
+<h1>id</h1>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">id</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="lineno">4</span> <span class="o">...</span> <span class="mi">4298185472</span>
+<span class="lineno">5</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">id</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="lineno">6</span> <span class="o">...</span> <span class="mi">4298185496</span>
+</pre></div>
+</section>
+            
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              19/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/02_plongeon.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h2>Affectation</h2></header>
+            
+            
+            <section><p>Comme dit auparavant, les variables ne sont pas déclarées avec un type. L'opérateur d'affectation est le très classique <strong>=</strong>.</p>
+<h1>Exemple</h1>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+</pre></div>
+
+<p>Comme expliqué auparavant, le type des variables est dynamique.</p>
+<h1>Typage dynamique</h1>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="lineno">2</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span>
+<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;chaine&#39;</span>
+<span class="lineno">4</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="lineno">5</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
+</pre></div>
+</section>
+            
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              20/21
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/02_plongeon.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h3>Affectation</h3></header>
+            
+            
+            <section><p>L'affectation multiple est possible en python :</p>
+<h1>Affectation multiple</h1>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
+<span class="lineno">3</span> <span class="o">...</span> <span class="mi">0</span>
+<span class="lineno">4</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">y</span>
+<span class="lineno">5</span> <span class="o">...</span> <span class="mi">0</span>
+</pre></div>
+</section>
+            
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              21/21
             </aside>
           </footer>
         </div>
@@ -643,7 +760,7 @@
       
       
       <tr id="toc-row-16">
-        <th><a href="#slide16">Prêt ? On y va</a></th>
+        <th><a href="#slide16">Python de A à M</a></th>
         <td><a href="#slide16">16</a></td>
       </tr>
       
@@ -656,6 +773,16 @@
         <tr id="toc-row-18" class="sub">
           <th><a href="#slide18">Jouons un peu avec python</a></th>
           <td><a href="#slide18">18</a></td>
+        </tr>
+        
+        <tr id="toc-row-19" class="sub">
+          <th><a href="#slide19">Quelques fonctions utiles</a></th>
+          <td><a href="#slide19">19</a></td>
+        </tr>
+        
+        <tr id="toc-row-20" class="sub">
+          <th><a href="#slide20">Affectation</a></th>
+          <td><a href="#slide20">20</a></td>
         </tr>
         
       
