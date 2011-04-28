@@ -4,7 +4,7 @@
 
 ---
 
-# Forces de python
+## Forces de python
 
 .fx: bigbullet
 
@@ -17,7 +17,7 @@
 
 ---
 
-# Syntaxe python
+## Syntaxe python
 
 La syntaxe python est très simple, très concise et impose d'utiliser l'indentation des lignes de code ce qui rend les programmes plus faciles à lire.
 
@@ -33,7 +33,7 @@ La syntaxe python est très simple, très concise et impose d'utiliser l'indenta
 
 ---
 
-# Typage des données Python
+## Typage des données Python
 
 Python est un langage à typage fort dynamique.
 
@@ -49,7 +49,7 @@ Python est un langage à typage fort dynamique.
 
 ---
 
-# Typage dynamique
+### Typage dynamique
 
 > Un langage est typé dynamiquement si la déclaration des variables se fait sans spécifier le type.
 
@@ -57,9 +57,16 @@ Python est un langage à typage fort dynamique.
 
 ---
 
-# Python : un langage Objet
+## Python : un langage Objet
 
 Python est avant tout un langage objet, même si il permet d'utiliser d'autres paradigmes que la **programmation orientée objet**, au final on ne manipule que des objets en Python (C'est très important et on le reverra plus tard.).
 
 ---
 
+# Un peu de lecture
+
+Voici quelques ouvrages qui vous seront sûrement utiles lors de votre apprentissage du langage :
+
+* [La documentation officielle](http://docs.python.org/)
+* [Dive into Python](http://diveintopython.org/)
+* [Traduction française de **Dive into python**](http://diveintopython.adrahon.org/)
