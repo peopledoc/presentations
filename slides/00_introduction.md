@@ -10,20 +10,20 @@
 
 .fx: bigbullet
 
-* Nicolas Perriault
-* Développeur PYTHON & DJANGO
-* [http://akei.com/](http://akei.com/)
-* [https://twitter.com/n1k0](https://twitter.com/n1k0)
+* FELD Boris
+* Développeur PYTHON
+* [http://feldboris.alwaysdata.net/](http://feldboris.alwaysdata.net/)
+* [https://twitter.com/lothiraldan](https://twitter.com/lothiraldan)
 
 ---
 
-# Intégration quoi ?
+# Python Késako ?
 
 .fx: centerquote
 
-> L'intégration continue est un ensemble de pratiques utilisées en génie logiciel. Elles consistent à <strong>vérifier automatiquement à chaque modification de code source que le résultat des modifications ne produit pas de régression</strong> de l'application en cours de développement.
+> Python is a programming language that lets you work more quickly and integrate your systems more effectively. You can learn to use Python and see almost immediate gains in productivity and lower maintenance costs.
 
-<p class="cite">— <a href="http://wikipedia.org/">Wikipedia</a></p>
+<p class="cite">— <a href="http://python.org/">Site officiel Python</a></p>
 
 ---
 
@@ -31,73 +31,33 @@
 
 .fx: centerquote
 
-> T'as le droit de tout péter, mais t'es obligé d'**être au courant**.
+> Python est un langage qui va te permettre de programmer plus **rapidement** et plus **efficacement**.
 
-<p class="cite">— <a href="https://twitter.com/n1k0">@n1k0</a></p>
-
----
-
-# … ou comme dirait Jean-Claude
-
-.fx: centerquote
-
-> Il y a des gens qui n'ont pas réussi parce qu'ils ne sont pas *aware*, **ils ne sont pas au courant**. Ils ne sont pas à l'attention de savoir qu'ils existent. Les pauvres, ils savent pas. Il faut réveiller les gens.
-
-<p class="cite">— <a href="http://www.echolaliste.com/x28.htm">Jean-Claude Van Damme</a></p>
+<p class="cite">— <a href="https://twitter.com/lothiraldan">@lothiraldan</a></p>
 
 ---
 
-# Le but de l'intégration continue
+# Informations globales
 
 .fx: bigbullet
 
-* Avoir **confiance** en son propre code et celui de son équipe
-* **Responsabiliser** les intervenants sur la qualité
-* Pouvoir déployer plus **sereinement**
-* Faire l'**apéro** plus tôt
-* Soulager les perfectionnistes pressés sensibles au **stress**
+* Python a été crée par **Guido Van Rossum** (considéré depuis comme **dictateur bienveillant à vie**).
+* Le projet Python a été nommé ainsi car **Guido Van Rossum** est un fan des **Monthy Python** (comme tous les développeurs python d'ailleurs ^^).
+* La première version a été écrite en 1989, durant 1 semaine de vacances de **Guido Van Rossum** durant le période des fêtes.
 
 ---
 
-# Comment ?
+# Informations bis
 
 .fx: bigbullet
 
-### Régulièrement et automatiquement :
+* Considéré aujourd'hui comme **6ème langage le plus populaire** (par [Tiobe Index](http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html)) et a gagné le prix du **Langage de l'année 2010** et celui de 2007 aussi.
 
-* Contrôler l'**intégrité** unitaire et fonctionnelle
-* S'assurer de l'absence de **régressions**
-* Mesurer la **couverture** du code
-* Surveiller le respect des **conventions** de codage
-* Signaler les **erreurs** de codage
-* Générer des **rapports** synthétiques utiles
 
 ---
 
-# Jenkins
+# Guido Van Rossum
 
 .fx: fullimage
 
-![](images/jenkins-logo.png)
-
----
-
-# Jenkins
-
-.fx: fullimage
-
-![](images/jenkins-global.png)
-
----
-
-# Jenkins
-
-.fx: bigbullet
-
-* Anciennement <i>Hudson</i>
-* Serveur d'intégration continue
-* Écrit en Java <small>(mais il fonctionne bien quand même)</small>
-* Open Source  (sous licence MIT)
-* Extensibilité, nombreux plugins
-* Intégration avec les différents (D)VCS: Git, Mercurial, SVN, CVS <small>(ne riez pas)</small>
-* [http://www.jenkins-ci.org/](http://www.jenkins-ci.org/)
+![](images/guido.jpg)
