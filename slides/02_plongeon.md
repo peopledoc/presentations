@@ -26,3 +26,16 @@ Voici l'exemple classique du **Hello World** en python
 ## Jouons un peu avec python
 
 Avant d'aller plus loin, nous allons jouer un peu avec l'interpréteur python.
+
+# Lancer l'interpréteur en mode interactif
+
+    !bash
+    python
+    
+# Ou sinon
+
+    !bash
+    ipython
+
+Essayer les exemples de la page suivante : [http://docs.python.org/tutorial/introduction.html#using-python-as-a-calculator](http://docs.python.org/tutorial/introduction.html#using-python-as-a-calculator).
+
