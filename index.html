@@ -70,7 +70,7 @@
             </aside>
             
             <aside class="page_number">
-              1/16
+              1/18
             </aside>
           </footer>
         </div>
@@ -99,7 +99,7 @@
             </aside>
             
             <aside class="page_number">
-              2/16
+              2/18
             </aside>
           </footer>
         </div>
@@ -126,7 +126,7 @@
             </aside>
             
             <aside class="page_number">
-              3/16
+              3/18
             </aside>
           </footer>
         </div>
@@ -153,7 +153,7 @@
             </aside>
             
             <aside class="page_number">
-              4/16
+              4/18
             </aside>
           </footer>
         </div>
@@ -181,7 +181,7 @@
             </aside>
             
             <aside class="page_number">
-              5/16
+              5/18
             </aside>
           </footer>
         </div>
@@ -207,7 +207,7 @@
             </aside>
             
             <aside class="page_number">
-              6/16
+              6/18
             </aside>
           </footer>
         </div>
@@ -231,7 +231,7 @@
             </aside>
             
             <aside class="page_number">
-              7/16
+              7/18
             </aside>
           </footer>
         </div>
@@ -253,7 +253,7 @@
             </aside>
             
             <aside class="page_number">
-              8/16
+              8/18
             </aside>
           </footer>
         </div>
@@ -274,6 +274,7 @@
 <li><strong>Garbage collector</strong> included.</li>
 <li>Extensible.</li>
 <li><strong>Batteries included</strong>.</li>
+<li>Gestion des exceptions.</li>
 </ul></section>
             
           </div>
@@ -284,7 +285,7 @@
             </aside>
             
             <aside class="page_number">
-              9/16
+              9/18
             </aside>
           </footer>
         </div>
@@ -315,7 +316,37 @@
             </aside>
             
             <aside class="page_number">
-              10/16
+              10/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/01_langage_presentation.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h2>Implémentations de python</h2></header>
+            
+            
+            <section><p>Il existe plusieurs implémentations de python qui permettent d'étendre le langage avec des librairies dans d'autres langages :</p>
+<ul>
+<li>CPython : L'interpréteur de référence de python. Il génère du byte-code python (fichier *.pyc) et est écrit en C; il permet d'étendre le langage avec des librairies C.</li>
+<li>Jython : Interpréteur qui permet de coupler du python et du java dans le même programme, génère du byte-code JAVA.</li>
+<li>IronPython : Implémentation de python qui vise .Net et Mono, permet de coupler python avec le framework .Net.</li>
+<li>Pypy : Implémentation de Python en Python; projet de recherche pour obtenir une implémentation plus rapide que l'implémentation de référence (CPython).</li>
+</ul></section>
+            
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/01_langage_presentation.md">slides/01_langage_presentation.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              11/18
             </aside>
           </footer>
         </div>
@@ -346,7 +377,7 @@
             </aside>
             
             <aside class="page_number">
-              11/16
+              12/18
             </aside>
           </footer>
         </div>
@@ -373,7 +404,7 @@
             </aside>
             
             <aside class="page_number">
-              12/16
+              13/18
             </aside>
           </footer>
         </div>
@@ -397,7 +428,7 @@
             </aside>
             
             <aside class="page_number">
-              13/16
+              14/18
             </aside>
           </footer>
         </div>
@@ -426,7 +457,7 @@
             </aside>
             
             <aside class="page_number">
-              14/16
+              15/18
             </aside>
           </footer>
         </div>
@@ -448,7 +479,7 @@
             </aside>
             
             <aside class="page_number">
-              15/16
+              16/18
             </aside>
           </footer>
         </div>
@@ -459,7 +490,7 @@
         <div class="slide has_code">
           <div class="inner">
             
-            <header><h1>Exemple classique</h1></header>
+            <header><h2>Exemple classique</h2></header>
             
             
             <section><p>Voici l'exemple classique du <strong>Hello World</strong> en python</p>
@@ -469,7 +500,7 @@
 <span class="lineno">3</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello World !&quot;</span><span class="p">)</span>
 </pre></div>
 
-<h1>Éxécution</h1>
+<h1>Exécution</h1>
 <div class="highlight"><pre><span class="lineno">1</span> <span class="nv">$ </span>python hello_world.py
 <span class="lineno">2</span> Hello World !
 </pre></div>
@@ -483,7 +514,31 @@
             </aside>
             
             <aside class="page_number">
-              16/16
+              17/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides/02_plongeon.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h2>Jouons un peu avec python</h2></header>
+            
+            
+            <section><p>Avant d'aller plus loin, nous allons jouer un peu avec l'interpréteur python.</p></section>
+            
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              18/18
             </aside>
           </footer>
         </div>
@@ -556,33 +611,44 @@
         </tr>
         
         <tr id="toc-row-11" class="sub">
-          <th><a href="#slide11">Typage des données Python</a></th>
+          <th><a href="#slide11">Implémentations de python</a></th>
           <td><a href="#slide11">11</a></td>
         </tr>
         
-        <tr id="toc-row-13" class="sub">
-          <th><a href="#slide13">Python : un langage Objet</a></th>
-          <td><a href="#slide13">13</a></td>
+        <tr id="toc-row-12" class="sub">
+          <th><a href="#slide12">Typage des données Python</a></th>
+          <td><a href="#slide12">12</a></td>
+        </tr>
+        
+        <tr id="toc-row-14" class="sub">
+          <th><a href="#slide14">Python : un langage Objet</a></th>
+          <td><a href="#slide14">14</a></td>
         </tr>
         
       
       
-      <tr id="toc-row-14">
-        <th><a href="#slide14">Un peu de lecture</a></th>
-        <td><a href="#slide14">14</a></td>
-      </tr>
-      
-      
       <tr id="toc-row-15">
-        <th><a href="#slide15">Prêt ? On y va</a></th>
+        <th><a href="#slide15">Un peu de lecture</a></th>
         <td><a href="#slide15">15</a></td>
       </tr>
       
       
       <tr id="toc-row-16">
-        <th><a href="#slide16">Exemple classique</a></th>
+        <th><a href="#slide16">Prêt ? On y va</a></th>
         <td><a href="#slide16">16</a></td>
       </tr>
+      
+        
+        <tr id="toc-row-17" class="sub">
+          <th><a href="#slide17">Exemple classique</a></th>
+          <td><a href="#slide17">17</a></td>
+        </tr>
+        
+        <tr id="toc-row-18" class="sub">
+          <th><a href="#slide18">Jouons un peu avec python</a></th>
+          <td><a href="#slide18">18</a></td>
+        </tr>
+        
       
       
     </table>

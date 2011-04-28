@@ -4,7 +4,7 @@
 
 ---
 
-# Exemple classique
+## Exemple classique
 
 Voici l'exemple classique du **Hello World** en python
 
@@ -15,8 +15,14 @@ Voici l'exemple classique du **Hello World** en python
     
     print("Hello World !")
     
-# Éxécution
+# Exécution
 
     !bash
     $ python hello_world.py
     Hello World !
+    
+---
+
+## Jouons un peu avec python
+
+Avant d'aller plus loin, nous allons jouer un peu avec l'interpréteur python.

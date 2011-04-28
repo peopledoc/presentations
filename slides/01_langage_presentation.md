@@ -14,6 +14,7 @@
 * **Garbage collector** included.
 * Extensible.
 * **Batteries included**.
+* Gestion des exceptions.
 
 ---
 
@@ -29,7 +30,16 @@ La syntaxe python est très simple, très concise et impose d'utiliser l'indenta
     
     print("Outside condition")
 
+---
 
+## Implémentations de python
+
+Il existe plusieurs implémentations de python qui permettent d'étendre le langage avec des librairies dans d'autres langages :
+
+* CPython : L'interpréteur de référence de python. Il génère du byte-code python (fichier *.pyc) et est écrit en C; il permet d'étendre le langage avec des librairies C.
+* Jython : Interpréteur qui permet de coupler du python et du java dans le même programme, génère du byte-code JAVA.
+* IronPython : Implémentation de python qui vise .Net et Mono, permet de coupler python avec le framework .Net.
+* Pypy : Implémentation de Python en Python; projet de recherche pour obtenir une implémentation plus rapide que l'implémentation de référence (CPython).
 
 ---
 
