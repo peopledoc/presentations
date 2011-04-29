@@ -71,6 +71,39 @@ Python est un langage à typage fort dynamique.
 
 Python est avant tout un langage objet, même si il permet d'utiliser d'autres paradigmes que la **programmation orientée objet**, au final on ne manipule que des objets en Python (C'est très important et on le reverra plus tard.).
 
+On distingue deux types d'objets, les objets immuables et les objets modifiables.
+
+Les objets immuables sont :
+
+* Nombres.
+* Chaînes de caractères.
+* Tuples.
+
+Les objets immuables sont comparables par l'assertion **is** et par la comparaison normale **==** :
+
+    !python
+    >>> () is ()
+    ... True
+    >>> () == ()
+    ... True
+ 
+---
+ 
+### Python : un langage Objet
+ 
+Les objets modifiables sont tous les autres, comme par exemple :
+ 
+* Listes
+* Dictionnaires
+ 
+Les objets modifiables ne sont pas comparables par l'assertion **is** mais avec la comparaison normale **==** :
+ 
+    !python
+    >>> [] is []
+    ... False
+    >>> [] == []
+    ... True
+
 ---
 
 ### Zen python

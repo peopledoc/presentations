@@ -110,7 +110,7 @@ L'affectation multiple est possible en python :
     >>> y
     ... 0
 
-# Extraire les parties d'un itérable
+# Assignation simultanée de plusieurs valeurs
 
     !python
     >>> z = (1, 2) #Tuple de deux éléments
