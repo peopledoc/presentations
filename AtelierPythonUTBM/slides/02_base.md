@@ -41,7 +41,7 @@ Il n'est pas nécessaire d'afficher le résultat d'appel aux fonctions quand on 
 
     !python
     >>> type(3)
-    --- <type 'int'>
+    ... <type 'int'>
     
 Le résultat attendu peut-être surprenant, mais la fonction type n'affiche rien du tout, c'est l'interpréteur qui l'affiche. (Ipython différencie les affichages normaux des retours fonction).
 
@@ -55,11 +55,11 @@ Obtenir le type d'une variable :
 
     !python
     >>> type(3)
-    --- <type 'int'>
+    ... <type 'int'>
     >>> type('')
-    --- <type 'str'>
+    ... <type 'str'>
     >>> type(None)
-    --- <type 'NoneType'>
+    ... <type 'NoneType'>
     
 Obtenir l'identifiant d'une variable :
 
@@ -69,9 +69,9 @@ Obtenir l'identifiant d'une variable :
     >>> x = 4
     >>> y = 3
     >>> id(x)
-    --- 4298185472
+    ... 4298185472
     >>> id(y)
-    --- 4298185496
+    ... 4298185496
 
 ---
 
@@ -90,10 +90,10 @@ Comme expliqué auparavant, le type des variables est dynamique.
 
     !python
     >>> type(x)
-    --- <type 'int'>
+    ... <type 'int'>
     >>> x = 'chaine'
     >>> type(x)
-    --- <type 'str'>
+    ... <type 'str'>
 
 ---
 
@@ -106,9 +106,9 @@ L'affectation multiple est possible en python :
     !python
     >>> x, y = 0
     >>> x
-    --- 0
+    ... 0
     >>> y
-    --- 0
+    ... 0
 
 # Extraire les parties d'un itérable
 
@@ -116,9 +116,9 @@ L'affectation multiple est possible en python :
     >>> z = (1, 2) #Tuple de deux éléments
     >>> x, y = z
     >>> x
-    --- 1
+    ... 1
     >>> y
-    --- 2
+    ... 2
     
 ---
 
@@ -132,7 +132,7 @@ Quand on divise un nombre par un entier, on a un résultat entier (arrondi à l'
 
     !python
     >>> 5/2
-    --- 2
+    ... 2
     
 #Division réelle
 
@@ -140,7 +140,7 @@ Pour obtenir un résultat réel, il faut diviser par un réel.
 
     !python
     >>> 5/2.
-    --- 2.5
+    ... 2.5
 ---
 
 ## Nombres
@@ -151,7 +151,7 @@ Pour convertir un entier en réel, la manière la plus efficace est :
 
     !python
     >>> 2 * 1.
-    --- 2.0
+    ... 2.0
 
 ---
 
@@ -162,10 +162,10 @@ En python, les chaînes de caractères sont représentés par des instances de l
     !python
     >>> x = ''
     >>> type(x)
-    --- <type 'str'>
+    ... <type 'str'>
     >>> x = str()
     >>> type(x)
-    --- <type 'str'>
+    ... <type 'str'>
     
 La construction d'une chaîne est élémentaire (avec des **simples quotes** ou des **double quotes**):
 
@@ -188,7 +188,7 @@ Pour pouvoir déclarer une chaîne sur plusieurs lignes, il faut tout simplement
     >>> x = 'string sur plusieurs \
     ... lignes'
     >>> x
-    --- 'string sur plusieurs lignes'
+    ... 'string sur plusieurs lignes'
     
 Vous pouvez aussi utiliser les **triples-quotes** (mais les sauts à la ligne ne sont pas supprimés) :
 
@@ -196,7 +196,7 @@ Vous pouvez aussi utiliser les **triples-quotes** (mais les sauts à la ligne ne
     >>> x = '''string sur plusieurs
     ... lignes'''
     >>> x
-    --- 'string sur plusieurs\nlignes'
+    ... 'string sur plusieurs\nlignes'
     
 Les chaînes de caractères sont des objets itérables (on en reparlera plus tard).
     
@@ -208,15 +208,15 @@ Les chaînes de caractères sont des objets itérables (on en reparlera plus tar
 
     !python
     >>> 'abc' + 'cdf'
-    --- 'abcdef'
+    ... 'abcdef'
     
 #Création d'une chaîne à partir d'un itérable
 
     !python
     >>> ''.join(['1', '2', '3'])
-    --- '123'
+    ... '123'
     >>> ','.join(['1', '2', '3'])
-    --- '1,2,3'
+    ... '1,2,3'
     
 # Chaîne standardisée
 

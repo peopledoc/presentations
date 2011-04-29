@@ -463,7 +463,7 @@
         </div>
       </div>
       
-      <!-- slide source: slides/02_plongeon.md -->
+      <!-- slide source: slides/02_base.md -->
       <div class="slide-wrapper">
         <div class="slide title">
           <div class="inner">
@@ -475,7 +475,7 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+              Source: <a href="slides/02_base.md">slides/02_base.md</a>
             </aside>
             
             <aside class="page_number">
@@ -485,7 +485,7 @@
         </div>
       </div>
       
-      <!-- slide source: slides/02_plongeon.md -->
+      <!-- slide source: slides/02_base.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
@@ -510,7 +510,7 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+              Source: <a href="slides/02_base.md">slides/02_base.md</a>
             </aside>
             
             <aside class="page_number">
@@ -520,7 +520,7 @@
         </div>
       </div>
       
-      <!-- slide source: slides/02_plongeon.md -->
+      <!-- slide source: slides/02_base.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
@@ -539,7 +539,7 @@
 
 <p>Il n'est pas nécessaire d'afficher le résultat d'appel aux fonctions quand on utilise l'interpréteur interactif, par exemple :</p>
 <div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="lineno">2</span> <span class="o">---</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span>
+<span class="lineno">2</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span>
 </pre></div>
 
 <p>Le résultat attendu peut-être surprenant, mais la fonction type n'affiche rien du tout, c'est l'interpréteur qui l'affiche. (Ipython différencie les affichages normaux des retours fonction).</p></section>
@@ -548,7 +548,7 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+              Source: <a href="slides/02_base.md">slides/02_base.md</a>
             </aside>
             
             <aside class="page_number">
@@ -558,7 +558,7 @@
         </div>
       </div>
       
-      <!-- slide source: slides/02_plongeon.md -->
+      <!-- slide source: slides/02_base.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
@@ -569,11 +569,11 @@
             <section><p>Obtenir le type d'une variable :</p>
 <h1>Type</h1>
 <div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="lineno">2</span> <span class="o">---</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span>
+<span class="lineno">2</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span>
 <span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="s">&#39;&#39;</span><span class="p">)</span>
-<span class="lineno">4</span> <span class="o">---</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
+<span class="lineno">4</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
 <span class="lineno">5</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="bp">None</span><span class="p">)</span>
-<span class="lineno">6</span> <span class="o">---</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;NoneType&#39;</span><span class="o">&gt;</span>
+<span class="lineno">6</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;NoneType&#39;</span><span class="o">&gt;</span>
 </pre></div>
 
 <p>Obtenir l'identifiant d'une variable :</p>
@@ -581,9 +581,9 @@
 <div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">id</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="lineno">4</span> <span class="o">---</span> <span class="mi">4298185472</span>
+<span class="lineno">4</span> <span class="o">...</span> <span class="mi">4298185472</span>
 <span class="lineno">5</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">id</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-<span class="lineno">6</span> <span class="o">---</span> <span class="mi">4298185496</span>
+<span class="lineno">6</span> <span class="o">...</span> <span class="mi">4298185496</span>
 </pre></div>
 </section>
             
@@ -591,7 +591,7 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+              Source: <a href="slides/02_base.md">slides/02_base.md</a>
             </aside>
             
             <aside class="page_number">
@@ -601,7 +601,7 @@
         </div>
       </div>
       
-      <!-- slide source: slides/02_plongeon.md -->
+      <!-- slide source: slides/02_base.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
@@ -617,10 +617,10 @@
 <p>Comme expliqué auparavant, le type des variables est dynamique.</p>
 <h1>Typage dynamique</h1>
 <div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="lineno">2</span> <span class="o">---</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span>
+<span class="lineno">2</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span>
 <span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;chaine&#39;</span>
 <span class="lineno">4</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="lineno">5</span> <span class="o">---</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
+<span class="lineno">5</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
 </pre></div>
 </section>
             
@@ -628,7 +628,7 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+              Source: <a href="slides/02_base.md">slides/02_base.md</a>
             </aside>
             
             <aside class="page_number">
@@ -638,7 +638,7 @@
         </div>
       </div>
       
-      <!-- slide source: slides/02_plongeon.md -->
+      <!-- slide source: slides/02_base.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
@@ -650,18 +650,18 @@
 <h1>Affectation multiple</h1>
 <div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
-<span class="lineno">3</span> <span class="o">---</span> <span class="mi">0</span>
+<span class="lineno">3</span> <span class="o">...</span> <span class="mi">0</span>
 <span class="lineno">4</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">y</span>
-<span class="lineno">5</span> <span class="o">---</span> <span class="mi">0</span>
+<span class="lineno">5</span> <span class="o">...</span> <span class="mi">0</span>
 </pre></div>
 
 <h1>Extraire les parties d'un itérable</h1>
 <div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c">#Tuple de deux éléments</span>
 <span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">z</span>
 <span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
-<span class="lineno">4</span> <span class="o">---</span> <span class="mi">1</span>
+<span class="lineno">4</span> <span class="o">...</span> <span class="mi">1</span>
 <span class="lineno">5</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">y</span>
-<span class="lineno">6</span> <span class="o">---</span> <span class="mi">2</span>
+<span class="lineno">6</span> <span class="o">...</span> <span class="mi">2</span>
 </pre></div>
 </section>
             
@@ -669,7 +669,7 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+              Source: <a href="slides/02_base.md">slides/02_base.md</a>
             </aside>
             
             <aside class="page_number">
@@ -679,7 +679,7 @@
         </div>
       </div>
       
-      <!-- slide source: slides/02_plongeon.md -->
+      <!-- slide source: slides/02_base.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
@@ -691,13 +691,13 @@
 <h1>Division entière</h1>
 <p>Quand on divise un nombre par un entier, on a un résultat entier (arrondi à l'entier inférieur).</p>
 <div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span><span class="o">/</span><span class="mi">2</span>
-<span class="lineno">2</span> <span class="o">---</span> <span class="mi">2</span>
+<span class="lineno">2</span> <span class="o">...</span> <span class="mi">2</span>
 </pre></div>
 
 <h1>Division réelle</h1>
 <p>Pour obtenir un résultat réel, il faut diviser par un réel.</p>
 <div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span><span class="o">/</span><span class="mf">2.</span>
-<span class="lineno">2</span> <span class="o">---</span> <span class="mf">2.5</span>
+<span class="lineno">2</span> <span class="o">...</span> <span class="mf">2.5</span>
 </pre></div>
 </section>
             
@@ -705,7 +705,7 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+              Source: <a href="slides/02_base.md">slides/02_base.md</a>
             </aside>
             
             <aside class="page_number">
@@ -715,7 +715,7 @@
         </div>
       </div>
       
-      <!-- slide source: slides/02_plongeon.md -->
+      <!-- slide source: slides/02_base.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
@@ -726,7 +726,7 @@
             <section><h1>Transformer un entier en réel</h1>
 <p>Pour convertir un entier en réel, la manière la plus efficace est :</p>
 <div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">*</span> <span class="mf">1.</span>
-<span class="lineno">2</span> <span class="o">---</span> <span class="mf">2.0</span>
+<span class="lineno">2</span> <span class="o">...</span> <span class="mf">2.0</span>
 </pre></div>
 </section>
             
@@ -734,7 +734,7 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+              Source: <a href="slides/02_base.md">slides/02_base.md</a>
             </aside>
             
             <aside class="page_number">
@@ -744,7 +744,7 @@
         </div>
       </div>
       
-      <!-- slide source: slides/02_plongeon.md -->
+      <!-- slide source: slides/02_base.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
@@ -755,10 +755,10 @@
             <section><p>En python, les chaînes de caractères sont représentés par des instances de la classe str.</p>
 <div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
 <span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="lineno">3</span> <span class="o">---</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
+<span class="lineno">3</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
 <span class="lineno">4</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="nb">str</span><span class="p">()</span>
 <span class="lineno">5</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="lineno">6</span> <span class="o">---</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
+<span class="lineno">6</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
 </pre></div>
 
 <p>La construction d'une chaîne est élémentaire (avec des <strong>simples quotes</strong> ou des <strong>double quotes</strong>):</p>
@@ -774,7 +774,7 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+              Source: <a href="slides/02_base.md">slides/02_base.md</a>
             </aside>
             
             <aside class="page_number">
@@ -784,7 +784,7 @@
         </div>
       </div>
       
-      <!-- slide source: slides/02_plongeon.md -->
+      <!-- slide source: slides/02_base.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
@@ -796,14 +796,14 @@
 <div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;string sur plusieurs </span><span class="se">\</span>
 <span class="lineno">2</span> <span class="s">... lignes&#39;</span>
 <span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
-<span class="lineno">4</span> <span class="o">---</span> <span class="s">&#39;string sur plusieurs lignes&#39;</span>
+<span class="lineno">4</span> <span class="o">...</span> <span class="s">&#39;string sur plusieurs lignes&#39;</span>
 </pre></div>
 
 <p>Vous pouvez aussi utiliser les <strong>triples-quotes</strong> (mais les sauts à la ligne ne sont pas supprimés) :</p>
 <div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;&#39;&#39;string sur plusieurs</span>
 <span class="lineno">2</span> <span class="s">... lignes&#39;&#39;&#39;</span>
 <span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
-<span class="lineno">4</span> <span class="o">---</span> <span class="s">&#39;string sur plusieurs</span><span class="se">\n</span><span class="s">lignes&#39;</span>
+<span class="lineno">4</span> <span class="o">...</span> <span class="s">&#39;string sur plusieurs</span><span class="se">\n</span><span class="s">lignes&#39;</span>
 </pre></div>
 
 <p>Les chaînes de caractères sont des objets itérables (on en reparlera plus tard).</p></section>
@@ -812,7 +812,7 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+              Source: <a href="slides/02_base.md">slides/02_base.md</a>
             </aside>
             
             <aside class="page_number">
@@ -822,7 +822,7 @@
         </div>
       </div>
       
-      <!-- slide source: slides/02_plongeon.md -->
+      <!-- slide source: slides/02_base.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
@@ -832,14 +832,14 @@
             
             <section><h1>Concaténation</h1>
 <div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="s">&#39;abc&#39;</span> <span class="o">+</span> <span class="s">&#39;cdf&#39;</span>
-<span class="lineno">2</span> <span class="o">---</span> <span class="s">&#39;abcdef&#39;</span>
+<span class="lineno">2</span> <span class="o">...</span> <span class="s">&#39;abcdef&#39;</span>
 </pre></div>
 
 <h1>Création d'une chaîne à partir d'un itérable</h1>
 <div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="s">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s">&#39;1&#39;</span><span class="p">,</span> <span class="s">&#39;2&#39;</span><span class="p">,</span> <span class="s">&#39;3&#39;</span><span class="p">])</span>
-<span class="lineno">2</span> <span class="o">---</span> <span class="s">&#39;123&#39;</span>
+<span class="lineno">2</span> <span class="o">...</span> <span class="s">&#39;123&#39;</span>
 <span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="s">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s">&#39;1&#39;</span><span class="p">,</span> <span class="s">&#39;2&#39;</span><span class="p">,</span> <span class="s">&#39;3&#39;</span><span class="p">])</span>
-<span class="lineno">4</span> <span class="o">---</span> <span class="s">&#39;1,2,3&#39;</span>
+<span class="lineno">4</span> <span class="o">...</span> <span class="s">&#39;1,2,3&#39;</span>
 </pre></div>
 
 <h1>Chaîne standardisée</h1>
@@ -854,7 +854,7 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+              Source: <a href="slides/02_base.md">slides/02_base.md</a>
             </aside>
             
             <aside class="page_number">
@@ -864,7 +864,7 @@
         </div>
       </div>
       
-      <!-- slide source: slides/02_plongeon.md -->
+      <!-- slide source: slides/02_base.md -->
       <div class="slide-wrapper">
         <div class="slide">
           <div class="inner">
@@ -876,7 +876,7 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+              Source: <a href="slides/02_base.md">slides/02_base.md</a>
             </aside>
             
             <aside class="page_number">
@@ -886,7 +886,7 @@
         </div>
       </div>
       
-      <!-- slide source: slides/02_plongeon.md -->
+      <!-- slide source: slides/02_base.md -->
       <div class="slide-wrapper">
         <div class="slide">
           <div class="inner">
@@ -901,7 +901,7 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="slides/02_plongeon.md">slides/02_plongeon.md</a>
+              Source: <a href="slides/02_base.md">slides/02_base.md</a>
             </aside>
             
             <aside class="page_number">
