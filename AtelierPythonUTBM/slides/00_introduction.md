@@ -11,7 +11,8 @@
 .fx: bigbullet
 
 * FELD Boris
-* Développeur PYTHON
+* Étudiant en GI02
+* Développeur PYTHON (depuis 2 ans)
 * [http://feldboris.alwaysdata.net/](http://feldboris.alwaysdata.net/)
 * [https://twitter.com/lothiraldan](https://twitter.com/lothiraldan)
 

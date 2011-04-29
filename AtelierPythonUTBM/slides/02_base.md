@@ -1,4 +1,4 @@
-# Python de A à Z
+# Python : les bases
 
 .fx: title
 
@@ -143,7 +143,7 @@ Pour obtenir un résultat réel, il faut diviser par un réel.
     ... 2.5
 ---
 
-## Nombres
+### Nombres
 
 #Transformer un entier en réel
 
@@ -180,7 +180,7 @@ Il faut faire attention aux caractères spéciaux et les échapper au besoin :
 
 ---
 
-## Chaîne de caractères
+### Chaîne de caractères
 
 Pour pouvoir déclarer une chaîne sur plusieurs lignes, il faut tout simplement échapper le retour à la ligne
 
@@ -229,14 +229,46 @@ Pour plus d'informations voir la documentation directement : [http://docs.python
 
 ---
 
-## Typage fort
-
-
-
----
-
 ## Formatage de chaîne
 
 Python dispose d'un moyen simple de formater des chaînes de caractère à la manière de **sprintf** en C.
 
 Pour plus d'informations, voir la documentation : [http://docs.python.org/library/stdtypes.html#string-formatting-operations](http://docs.python.org/library/stdtypes.html#string-formatting-operations).
+
+---
+
+## Typage fort
+
+Maintenant qu'on a vu quelque types de base, nous allons pouvoir voir qu'est ce qu'implique de faire le typage fort.
+
+Prenons deux variables :
+
+    !python
+    >>> x = 3
+    >>> y = '2'
+    
+Maintenant, on veut les additionner, mais le problème c'est qu'elle ne sont pas de même type :
+
+    !python
+    >>> x + y
+    Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+    TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+Vous allez peut-être vous dire que c'est abruti, mais réfléchissez au sens que vous donnez à la ligne de code précédente, quelle est le type de la valeur de retour vous allez avoir ? Il peut y en avoir 2 : **str** ou **int**. Bien entendu, on aurait pu introduire une convention, par exemple le type de retour est le type du premier opérande, mais n'oubliez pas le philosophie python : **"Explicit is better than implicit"**.
+
+---
+
+### Typage fort
+
+Pour obtenir une chaîne :
+
+    !python
+    >>> str(x) + y
+    ... '32'
+    
+Pour obtenir un entier :
+
+    !python
+    >>> x + int(y)
+    ... 5
