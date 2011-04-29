@@ -124,7 +124,24 @@ L'affectation multiple est possible en python :
 
 ## Nombres
 
-Python a bien entendu une gestion des nombres et de l'arithmétique élémentaire, mais il y a quelques résultats qui peuvent déstabiliser les nouveaux venus.
+Python a bien entendu une gestion des nombres et de l'arithmétique élémentaire, mais aussi :
+
+* Les nombres complexes.
+* Les grands nombres.
+* La conversion de base.
+
+La notation des nombres suit le standard suivant :
+
+* Entiers : 0
+* Réels : 0.0
+* Grand nombre : 0L
+* Complexe : 0j
+
+Néanmoins, il y a quelques résultats qui peuvent déstabiliser les nouveaux venus.
+    
+---
+
+### Nombres
 
 # Division entière
 
@@ -133,7 +150,7 @@ Quand on divise un nombre par un entier, on a un résultat entier (arrondi à l'
     !python
     >>> 5/2
     ... 2
-    
+
 #Division réelle
 
 Pour obtenir un résultat réel, il faut diviser par un réel.
@@ -141,9 +158,6 @@ Pour obtenir un résultat réel, il faut diviser par un réel.
     !python
     >>> 5/2.
     ... 2.5
----
-
-### Nombres
 
 #Transformer un entier en réel
 
@@ -229,17 +243,9 @@ Pour plus d'informations voir la documentation directement : [http://docs.python
 
 ---
 
-## Formatage de chaîne
+## Conversion de type
 
-Python dispose d'un moyen simple de formater des chaînes de caractère à la manière de **sprintf** en C.
-
-Pour plus d'informations, voir la documentation : [http://docs.python.org/library/stdtypes.html#string-formatting-operations](http://docs.python.org/library/stdtypes.html#string-formatting-operations).
-
----
-
-## Typage fort
-
-Maintenant qu'on a vu quelque types de base, nous allons pouvoir voir qu'est ce qu'implique de faire le typage fort.
+Comme on l'a vu auparavant, python est un langage à typage fort, c'est à dire que python ne permet pas de faire de conversion implicite de types (sauf cas exceptionnel entre les entiers et les réels).
 
 Prenons deux variables :
 
@@ -247,7 +253,7 @@ Prenons deux variables :
     >>> x = 3
     >>> y = '2'
     
-Maintenant, on veut les additionner, mais le problème c'est qu'elle ne sont pas de même type :
+Maintenant, on va essayer de les additionner, mais le problème c'est qu'elles ne sont pas du même type :
 
     !python
     >>> x + y
@@ -259,7 +265,7 @@ Vous allez peut-être vous dire que c'est abruti, mais réfléchissez au sens qu
 
 ---
 
-### Typage fort
+### Conversion de type
 
 Pour obtenir une chaîne :
 
@@ -272,3 +278,34 @@ Pour obtenir un entier :
     !python
     >>> x + int(y)
     ... 5
+
+---
+
+## Booléens
+
+# Valeurs considérées comme fausses :
+
+* None
+* False
+* Nombre équivalent à 0 (0, 0L, 0.0, 0j).
+* Séquence vide ('', (), []).
+* Mappage vide ({}).
+
+---
+
+## Opérations booléennes
+
+# Ou logique
+
+    !python
+    x or y
+    
+# Et logique :
+
+    !python
+    x and y
+    
+# Non logique :
+
+    !python
+    not x
