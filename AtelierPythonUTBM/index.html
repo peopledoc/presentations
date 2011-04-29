@@ -369,10 +369,10 @@
             
             <section><p>La syntaxe python est très simple, très concise et impose d'utiliser l'indentation des lignes de code ce qui rend les programmes plus faciles à lire.</p>
 <h1>Exemple</h1>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
-<span class="lineno">2</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Condition is true&quot;</span><span class="p">)</span>
-<span class="lineno">3</span> 
-<span class="lineno">4</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Outside condition&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Condition is true&quot;</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;Outside condition&quot;</span><span class="p">)</span>
 </pre></div>
 </section>
             
@@ -495,10 +495,10 @@
 <li>Tuples.</li>
 </ul>
 <p>Les objets immuables sont comparables par l'assertion <strong>is</strong> et par la comparaison normale <strong>==</strong> :</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="p">()</span> <span class="ow">is</span> <span class="p">()</span>
-<span class="lineno">2</span> <span class="o">...</span> <span class="bp">True</span>
-<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="p">()</span> <span class="o">==</span> <span class="p">()</span>
-<span class="lineno">4</span> <span class="o">...</span> <span class="bp">True</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="p">()</span> <span class="ow">is</span> <span class="p">()</span>
+<span class="o">...</span> <span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">()</span> <span class="o">==</span> <span class="p">()</span>
+<span class="o">...</span> <span class="bp">True</span>
 </pre></div>
 </section>
             
@@ -530,10 +530,10 @@
 <li>Dictionnaires</li>
 </ul>
 <p>Les objets modifiables ne sont pas comparables par l'assertion <strong>is</strong> mais avec la comparaison normale <strong>==</strong> :</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="p">[]</span> <span class="ow">is</span> <span class="p">[]</span>
-<span class="lineno">2</span> <span class="o">...</span> <span class="bp">False</span>
-<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="p">[]</span> <span class="o">==</span> <span class="p">[]</span>
-<span class="lineno">4</span> <span class="o">...</span> <span class="bp">True</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="p">[]</span> <span class="ow">is</span> <span class="p">[]</span>
+<span class="o">...</span> <span class="bp">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">[]</span> <span class="o">==</span> <span class="p">[]</span>
+<span class="o">...</span> <span class="bp">True</span>
 </pre></div>
 </section>
             
@@ -632,7 +632,7 @@
 </blockquote>
 <p class="cite">- The Zen of Python, by Tim Peters</p>
 
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">this</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">this</span>
 </pre></div>
 </section>
             
@@ -711,14 +711,14 @@
             
             <section><p>Voici l'exemple classique du <strong>Hello World</strong> en python</p>
 <h1>exemples/hello_world.py</h1>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="c"># -*- coding: utf-8 -*-</span>
-<span class="lineno">2</span> 
-<span class="lineno">3</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello World !&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span class="c"># -*- coding: utf-8 -*-</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello World !&quot;</span><span class="p">)</span>
 </pre></div>
 
 <h1>Exécution</h1>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="nv">$ </span>python hello_world.py
-<span class="lineno">2</span> Hello World !
+<div class="highlight"><pre><span class="nv">$ </span>python hello_world.py
+Hello World !
 </pre></div>
 </section>
             
@@ -746,16 +746,16 @@
             
             <section><p>Avant d'aller plus loin, nous allons jouer un peu avec l'interpréteur python.</p>
 <h1>Lancer l'interpréteur en mode interactif</h1>
-<div class="highlight"><pre><span class="lineno">1</span> python
+<div class="highlight"><pre>python
 </pre></div>
 
 <h1>Ou sinon</h1>
-<div class="highlight"><pre><span class="lineno">1</span> ipython
+<div class="highlight"><pre>ipython
 </pre></div>
 
 <p>Il n'est pas nécessaire d'afficher le résultat d'appel aux fonctions quand on utilise l'interpréteur interactif, par exemple :</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="lineno">2</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span>
 </pre></div>
 
 <p>Le résultat attendu peut-être surprenant, mais la fonction type n'affiche rien du tout, c'est l'interpréteur qui l'affiche. (Ipython différencie les affichages normaux des retours fonction).</p></section>
@@ -784,22 +784,22 @@
             
             <section><p>Obtenir le type d'une variable :</p>
 <h1>Type</h1>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="lineno">2</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span>
-<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="s">&#39;&#39;</span><span class="p">)</span>
-<span class="lineno">4</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
-<span class="lineno">5</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="bp">None</span><span class="p">)</span>
-<span class="lineno">6</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;NoneType&#39;</span><span class="o">&gt;</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="s">&#39;&#39;</span><span class="p">)</span>
+<span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="bp">None</span><span class="p">)</span>
+<span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;NoneType&#39;</span><span class="o">&gt;</span>
 </pre></div>
 
 <p>Obtenir l'identifiant d'une variable :</p>
 <h1>id</h1>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
-<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">id</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="lineno">4</span> <span class="o">...</span> <span class="mi">4298185472</span>
-<span class="lineno">5</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">id</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-<span class="lineno">6</span> <span class="o">...</span> <span class="mi">4298185496</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">id</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="o">...</span> <span class="mi">4298185472</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">id</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="o">...</span> <span class="mi">4298185496</span>
 </pre></div>
 </section>
             
@@ -827,16 +827,16 @@
             
             <section><p>Comme dit auparavant, les variables ne sont pas déclarées avec un type. L'opérateur d'affectation est le très classique <strong>=</strong>.</p>
 <h1>Exemple</h1>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
 </pre></div>
 
 <p>Comme expliqué auparavant, le type des variables est dynamique.</p>
 <h1>Typage dynamique</h1>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="lineno">2</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span>
-<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;chaine&#39;</span>
-<span class="lineno">4</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="lineno">5</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;chaine&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
 </pre></div>
 </section>
             
@@ -864,20 +864,20 @@
             
             <section><p>L'affectation multiple est possible en python :</p>
 <h1>Affectation multiple</h1>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
-<span class="lineno">3</span> <span class="o">...</span> <span class="mi">0</span>
-<span class="lineno">4</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">y</span>
-<span class="lineno">5</span> <span class="o">...</span> <span class="mi">0</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
+<span class="o">...</span> <span class="mi">0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">y</span>
+<span class="o">...</span> <span class="mi">0</span>
 </pre></div>
 
 <h1>Assignation simultanée de plusieurs valeurs</h1>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c">#Tuple de deux éléments</span>
-<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">z</span>
-<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
-<span class="lineno">4</span> <span class="o">...</span> <span class="mi">1</span>
-<span class="lineno">5</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">y</span>
-<span class="lineno">6</span> <span class="o">...</span> <span class="mi">2</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c">#Tuple de deux éléments</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">z</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
+<span class="o">...</span> <span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">y</span>
+<span class="o">...</span> <span class="mi">2</span>
 </pre></div>
 </section>
             
@@ -942,20 +942,20 @@
             
             <section><h1>Division entière</h1>
 <p>Quand on divise un nombre par un entier, on a un résultat entier (arrondi à l'entier inférieur).</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span><span class="o">/</span><span class="mi">2</span>
-<span class="lineno">2</span> <span class="o">...</span> <span class="mi">2</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span><span class="o">/</span><span class="mi">2</span>
+<span class="o">...</span> <span class="mi">2</span>
 </pre></div>
 
 <h1>Division réelle</h1>
 <p>Pour obtenir un résultat réel, il faut diviser par un réel.</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span><span class="o">/</span><span class="mf">2.</span>
-<span class="lineno">2</span> <span class="o">...</span> <span class="mf">2.5</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span><span class="o">/</span><span class="mf">2.</span>
+<span class="o">...</span> <span class="mf">2.5</span>
 </pre></div>
 
 <h1>Transformer un entier en réel</h1>
 <p>Pour convertir un entier en réel, la manière la plus efficace est :</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">*</span> <span class="mf">1.</span>
-<span class="lineno">2</span> <span class="o">...</span> <span class="mf">2.0</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">*</span> <span class="mf">1.</span>
+<span class="o">...</span> <span class="mf">2.0</span>
 </pre></div>
 </section>
             
@@ -982,20 +982,20 @@
             
             
             <section><p>En python, les chaînes de caractères sont représentés par des instances de la classe str.</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
-<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="lineno">3</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
-<span class="lineno">4</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="nb">str</span><span class="p">()</span>
-<span class="lineno">5</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="lineno">6</span> <span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="nb">str</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="o">...</span> <span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;str&#39;</span><span class="o">&gt;</span>
 </pre></div>
 
 <p>La construction d'une chaîne est élémentaire (avec des <strong>simples quotes</strong> ou des <strong>double quotes</strong>):</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;string&#39;</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;string&#39;</span>
 </pre></div>
 
 <p>Il faut faire attention aux caractères spéciaux et les échapper au besoin :</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;j</span><span class="se">\&#39;</span><span class="s">aime&#39;</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;j</span><span class="se">\&#39;</span><span class="s">aime&#39;</span>
 </pre></div>
 </section>
             
@@ -1022,17 +1022,17 @@
             
             
             <section><p>Pour pouvoir déclarer une chaîne sur plusieurs lignes, il faut tout simplement échapper le retour à la ligne</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;string sur plusieurs </span><span class="se">\</span>
-<span class="lineno">2</span> <span class="s">... lignes&#39;</span>
-<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
-<span class="lineno">4</span> <span class="o">...</span> <span class="s">&#39;string sur plusieurs lignes&#39;</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;string sur plusieurs </span><span class="se">\</span>
+<span class="s">... lignes&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
+<span class="o">...</span> <span class="s">&#39;string sur plusieurs lignes&#39;</span>
 </pre></div>
 
 <p>Vous pouvez aussi utiliser les <strong>triples-quotes</strong> (mais les sauts à la ligne ne sont pas supprimés) :</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;&#39;&#39;string sur plusieurs</span>
-<span class="lineno">2</span> <span class="s">... lignes&#39;&#39;&#39;</span>
-<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
-<span class="lineno">4</span> <span class="o">...</span> <span class="s">&#39;string sur plusieurs</span><span class="se">\n</span><span class="s">lignes&#39;</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;&#39;&#39;string sur plusieurs</span>
+<span class="s">... lignes&#39;&#39;&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
+<span class="o">...</span> <span class="s">&#39;string sur plusieurs</span><span class="se">\n</span><span class="s">lignes&#39;</span>
 </pre></div>
 
 <p>Les chaînes de caractères sont des objets itérables (on en reparlera plus tard).</p></section>
@@ -1060,21 +1060,21 @@
             
             
             <section><h1>Concaténation</h1>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="s">&#39;abc&#39;</span> <span class="o">+</span> <span class="s">&#39;cdf&#39;</span>
-<span class="lineno">2</span> <span class="o">...</span> <span class="s">&#39;abcdef&#39;</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="s">&#39;abc&#39;</span> <span class="o">+</span> <span class="s">&#39;cdf&#39;</span>
+<span class="o">...</span> <span class="s">&#39;abcdef&#39;</span>
 </pre></div>
 
 <h1>Création d'une chaîne à partir d'un itérable</h1>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="s">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s">&#39;1&#39;</span><span class="p">,</span> <span class="s">&#39;2&#39;</span><span class="p">,</span> <span class="s">&#39;3&#39;</span><span class="p">])</span>
-<span class="lineno">2</span> <span class="o">...</span> <span class="s">&#39;123&#39;</span>
-<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="s">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s">&#39;1&#39;</span><span class="p">,</span> <span class="s">&#39;2&#39;</span><span class="p">,</span> <span class="s">&#39;3&#39;</span><span class="p">])</span>
-<span class="lineno">4</span> <span class="o">...</span> <span class="s">&#39;1,2,3&#39;</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="s">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s">&#39;1&#39;</span><span class="p">,</span> <span class="s">&#39;2&#39;</span><span class="p">,</span> <span class="s">&#39;3&#39;</span><span class="p">])</span>
+<span class="o">...</span> <span class="s">&#39;123&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s">&#39;1&#39;</span><span class="p">,</span> <span class="s">&#39;2&#39;</span><span class="p">,</span> <span class="s">&#39;3&#39;</span><span class="p">])</span>
+<span class="o">...</span> <span class="s">&#39;1,2,3&#39;</span>
 </pre></div>
 
 <h1>Chaîne standardisée</h1>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;sTaNdArD&#39;</span>
-<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
-<span class="lineno">3</span> <span class="o">&lt;&lt;&lt;</span> <span class="s">&#39;Standard&#39;</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&#39;sTaNdArD&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+<span class="o">&lt;&lt;&lt;</span> <span class="s">&#39;Standard&#39;</span>
 </pre></div>
 
 <p>Pour plus d'informations voir la documentation directement : <a href="http://docs.python.org/library/stdtypes.html#string-methods">http://docs.python.org/library/stdtypes.html#string-methods</a>.</p></section>
@@ -1103,15 +1103,15 @@
             
             <section><p>Comme on l'a vu auparavant, python est un langage à typage fort, c'est à dire que python ne permet pas de faire de conversion implicite de types (sauf cas exceptionnel entre les entiers et les réels).</p>
 <p>Prenons deux variables :</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="s">&#39;2&#39;</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="s">&#39;2&#39;</span>
 </pre></div>
 
 <p>Maintenant, on va essayer de les additionner, mais le problème c'est qu'elles ne sont pas du même type :</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
-<span class="lineno">2</span> <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
-<span class="lineno">3</span>     <span class="n">File</span> <span class="s">&quot;&lt;stdin&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="lineno">4</span> <span class="ne">TypeError</span><span class="p">:</span> <span class="n">unsupported</span> <span class="n">operand</span> <span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="o">+</span><span class="p">:</span> <span class="s">&#39;int&#39;</span> <span class="ow">and</span> <span class="s">&#39;str&#39;</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+    <span class="n">File</span> <span class="s">&quot;&lt;stdin&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">TypeError</span><span class="p">:</span> <span class="n">unsupported</span> <span class="n">operand</span> <span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="o">+</span><span class="p">:</span> <span class="s">&#39;int&#39;</span> <span class="ow">and</span> <span class="s">&#39;str&#39;</span>
 </pre></div>
 
 <p>Vous allez peut-être vous dire que c'est abruti, mais réfléchissez au sens que vous donnez à la ligne de code précédente, quelle est le type de la valeur de retour vous allez avoir ? Il peut y en avoir 2 : <strong>str</strong> ou <strong>int</strong>. Bien entendu, on aurait pu introduire une convention, par exemple le type de retour est le type du premier opérande, mais n'oubliez pas le philosophie python : <strong>"Explicit is better than implicit"</strong>.</p></section>
@@ -1139,13 +1139,13 @@
             
             
             <section><p>Pour obtenir une chaîne :</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">y</span>
-<span class="lineno">2</span> <span class="o">...</span> <span class="s">&#39;32&#39;</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">y</span>
+<span class="o">...</span> <span class="s">&#39;32&#39;</span>
 </pre></div>
 
 <p>Pour obtenir un entier :</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-<span class="lineno">2</span> <span class="o">...</span> <span class="mi">5</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="o">...</span> <span class="mi">5</span>
 </pre></div>
 </section>
             
@@ -1203,15 +1203,15 @@
             
             
             <section><h1>Ou logique</h1>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="n">x</span> <span class="ow">or</span> <span class="n">y</span>
+<div class="highlight"><pre><span class="n">x</span> <span class="ow">or</span> <span class="n">y</span>
 </pre></div>
 
 <h1>Et logique :</h1>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="n">x</span> <span class="ow">and</span> <span class="n">y</span>
+<div class="highlight"><pre><span class="n">x</span> <span class="ow">and</span> <span class="n">y</span>
 </pre></div>
 
 <h1>Non logique :</h1>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="ow">not</span> <span class="n">x</span>
+<div class="highlight"><pre><span class="ow">not</span> <span class="n">x</span>
 </pre></div>
 </section>
             
