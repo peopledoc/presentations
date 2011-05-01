@@ -11,9 +11,9 @@
 * Portable.
 * Gratuit.
 * Syntaxe simple -> Facile à apprendre.
-* **Garbage collector** included.
+* Rammasse-miete.
 * Extensible.
-* **Batteries included**.
+* Piles incluses.
 * Gestion des exceptions.
 
 ---
@@ -160,6 +160,16 @@ Les objets modifiables ne sont pas comparables par l'assertion **is** mais avec 
 
     !python
     >>> import this
+
+---
+
+## Duck typing
+
+> En programmation informatique, le duck typing (traduction: typage canard) est un style d'interprétation du code source de certains langages de programmation à typage dynamique. Dans ce style, l'ensemble des méthodes et attributs d'un objet déterminent sa sémantique, plutôt que de la déterminer par exemple grâce à un type précédemment déclaré
+
+> L'analogie au canard vient de la phrase suivante: « Si je vois un animal qui vole comme un canard, cancane comme un canard, et nage comme un canard, alors j'appelle cet oiseau un canard ».
+
+<p class="cite">— <a href="http://fr.wikipedia.org/wiki/Duck_typing">Wikipedia</a></p>
 
 ---
 

@@ -224,14 +224,6 @@ Les chaînes de caractères sont des objets itérables (on en reparlera plus tar
     >>> 'abc' + 'cdf'
     ... 'abcdef'
     
-#Création d'une chaîne à partir d'un itérable
-
-    !python
-    >>> ''.join(['1', '2', '3'])
-    ... '123'
-    >>> ','.join(['1', '2', '3'])
-    ... '1,2,3'
-    
 # Chaîne standardisée
 
     !python
