@@ -31,7 +31,9 @@ pre {
 }
 
 p code, li code {
-  color: #487858;
+  /*color: #487858;
+  */
+  color:black;
 }
 
 div.slide strong {

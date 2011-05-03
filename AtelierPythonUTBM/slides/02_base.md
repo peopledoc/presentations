@@ -32,7 +32,7 @@ Avant d'aller plus loin, nous allons jouer un peu avec l'interpréteur python.
     !bash
     python
     
-# Ou sinon
+# Ou mieux
 
     !bash
     ipython
@@ -49,6 +49,19 @@ Le résultat attendu peut-être surprenant, mais la fonction type n'affiche rien
 
 ## Quelques fonctions utiles
 
+Afficher du texte :
+
+#print
+
+    !python
+    >>> print("Hello world")
+    Hello world
+    
+Python a changé le fonctionnement de la fonction print, il est recommandé d'utiliser la nouvelle notation, pour cela avec Python2.x :
+
+    !python
+    from __future__ import print_function
+
 Obtenir le type d'une variable :
 
 #Type
@@ -60,18 +73,6 @@ Obtenir le type d'une variable :
     ... <type 'str'>
     >>> type(None)
     ... <type 'NoneType'>
-    
-Obtenir l'identifiant d'une variable :
-
-#id
-
-    !python
-    >>> x = 4
-    >>> y = 3
-    >>> id(x)
-    ... 4298185472
-    >>> id(y)
-    ... 4298185496
 
 ---
 
@@ -113,8 +114,7 @@ L'affectation multiple est possible en python :
 # Assignation simultanée de plusieurs valeurs
 
     !python
-    >>> z = (1, 2) #Tuple de deux éléments
-    >>> x, y = z
+    >>> x, y = 1, 2
     >>> x
     ... 1
     >>> y
@@ -171,7 +171,7 @@ Pour convertir un entier en réel, la manière la plus efficace est :
 
 ## Chaîne de caractères
 
-En python, les chaînes de caractères sont représentés par des instances de la classe str.
+En python, les chaînes de caractères sont représentés par des instances de la classe str. On peut utiliser indifféremment les simples quotes (**' '**) et les doubles quotes (**" "**).
 
     !python
     >>> x = ''
@@ -229,7 +229,15 @@ Les chaînes de caractères sont des objets itérables (on en reparlera plus tar
     !python
     >>> x = 'sTaNdArD'
     >>> x.capitalize()
-    <<< 'Standard'
+    ... 'Standard'
+    
+# Chaîne d'une certaine longueur complétée par des 0
+
+    !python
+    >>> '32.0'.zfill(6)
+    ... '00032.0'
+    >>> '-3'.zfill(4)
+    ... '-000003'
     
 Pour plus d'informations voir la documentation directement : [http://docs.python.org/library/stdtypes.html#string-methods](http://docs.python.org/library/stdtypes.html#string-methods).
 

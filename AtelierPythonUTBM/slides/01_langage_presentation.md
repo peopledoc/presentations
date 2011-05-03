@@ -9,12 +9,21 @@
 .fx: bigbullet
 
 * Portable.
-* Gratuit.
+* Libre (Open-Source).
 * Syntaxe simple -> Facile à apprendre.
-* Rammasse-miete.
+* Développement d'applications rapides.
+* Ramasse-miete.
 * Extensible.
 * Piles incluses.
 * Gestion des exceptions.
+
+---
+
+## Faiblesses de python
+
+* Troll© ?
+* Souvent considéré juste comme un langage de scripts.
+* Plus lent que des langages compilés (et encore).
 
 ---
 
@@ -64,6 +73,16 @@ Python est un langage à typage fort dynamique.
 > Un langage est typé dynamiquement si la déclaration des variables se fait sans spécifier le type.
 
 <p class="cite">— <a href="http://fr.wikipedia.org/wiki/Typage_dynamique">Wikipedia</a></p>
+
+Par exemple, le C est un langage typé **statiquement** :
+
+    !c
+    int i = 4;
+    
+Alors que PHP est un langage typé **dynamiquement** :
+
+    !php
+    i = 4;
 
 ---
 
