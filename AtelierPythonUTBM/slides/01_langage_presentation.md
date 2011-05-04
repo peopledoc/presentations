@@ -102,9 +102,9 @@ Les objets immuables sont comparables par l'assertion **is** et par la comparais
 
     !python
     >>> () is ()
-    ... True
+    --- True
     >>> () == ()
-    ... True
+    --- True
  
 ---
  
@@ -119,9 +119,9 @@ Les objets modifiables ne sont pas comparables par l'assertion **is** mais avec 
  
     !python
     >>> [] is []
-    ... False
+    --- False
     >>> [] == []
-    ... True
+    --- True
 
 ---
 

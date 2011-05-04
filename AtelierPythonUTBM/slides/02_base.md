@@ -41,7 +41,7 @@ Il n'est pas nécessaire d'afficher le résultat d'appel aux fonctions quand on 
 
     !python
     >>> type(3)
-    ... <type 'int'>
+    --- <type 'int'>
     
 Le résultat attendu peut-être surprenant, mais la fonction type n'affiche rien du tout, c'est l'interpréteur qui l'affiche. (Ipython différencie les affichages normaux des retours fonction).
 
@@ -68,11 +68,11 @@ Obtenir le type d'une variable :
 
     !python
     >>> type(3)
-    ... <type 'int'>
+    --- <type 'int'>
     >>> type('')
-    ... <type 'str'>
+    --- <type 'str'>
     >>> type(None)
-    ... <type 'NoneType'>
+    --- <type 'NoneType'>
 
 ---
 
@@ -91,10 +91,10 @@ Comme expliqué auparavant, le type des variables est dynamique.
 
     !python
     >>> type(x)
-    ... <type 'int'>
+    --- <type 'int'>
     >>> x = 'chaine'
     >>> type(x)
-    ... <type 'str'>
+    --- <type 'str'>
 
 ---
 
@@ -107,18 +107,18 @@ L'affectation multiple est possible en python :
     !python
     >>> x, y = 0
     >>> x
-    ... 0
+    --- 0
     >>> y
-    ... 0
+    --- 0
 
 # Assignation simultanée de plusieurs valeurs
 
     !python
     >>> x, y = 1, 2
     >>> x
-    ... 1
+    --- 1
     >>> y
-    ... 2
+    --- 2
     
 ---
 
@@ -149,7 +149,7 @@ Quand on divise un nombre par un entier, on a un résultat entier (arrondi à l'
 
     !python
     >>> 5/2
-    ... 2
+    --- 2
 
 #Division réelle
 
@@ -157,7 +157,7 @@ Pour obtenir un résultat réel, il faut diviser par un réel.
 
     !python
     >>> 5/2.
-    ... 2.5
+    --- 2.5
 
 #Transformer un entier en réel
 
@@ -165,7 +165,7 @@ Pour convertir un entier en réel, la manière la plus efficace est :
 
     !python
     >>> 2 * 1.
-    ... 2.0
+    --- 2.0
 
 ---
 
@@ -176,10 +176,10 @@ En python, les chaînes de caractères sont représentés par des instances de l
     !python
     >>> x = ''
     >>> type(x)
-    ... <type 'str'>
+    --- <type 'str'>
     >>> x = str()
     >>> type(x)
-    ... <type 'str'>
+    --- <type 'str'>
     
 La construction d'une chaîne est élémentaire (avec des **simples quotes** ou des **double quotes**):
 
@@ -202,7 +202,7 @@ Pour pouvoir déclarer une chaîne sur plusieurs lignes, il faut tout simplement
     >>> x = 'string sur plusieurs \
     ... lignes'
     >>> x
-    ... 'string sur plusieurs lignes'
+    --- 'string sur plusieurs lignes'
     
 Vous pouvez aussi utiliser les **triples-quotes** (mais les sauts à la ligne ne sont pas supprimés) :
 
@@ -210,7 +210,7 @@ Vous pouvez aussi utiliser les **triples-quotes** (mais les sauts à la ligne ne
     >>> x = '''string sur plusieurs
     ... lignes'''
     >>> x
-    ... 'string sur plusieurs\nlignes'
+    --- 'string sur plusieurs\nlignes'
     
 Les chaînes de caractères sont des objets itérables (on en reparlera plus tard).
     
@@ -222,22 +222,22 @@ Les chaînes de caractères sont des objets itérables (on en reparlera plus tar
 
     !python
     >>> 'abc' + 'cdf'
-    ... 'abcdef'
+    --- 'abcdef'
     
 # Chaîne standardisée
 
     !python
     >>> x = 'sTaNdArD'
     >>> x.capitalize()
-    ... 'Standard'
+    --- 'Standard'
     
 # Chaîne d'une certaine longueur complétée par des 0
 
     !python
     >>> '32.0'.zfill(6)
-    ... '00032.0'
+    --- '00032.0'
     >>> '-3'.zfill(4)
-    ... '-000003'
+    --- '-000003'
     
 Pour plus d'informations voir la documentation directement : [http://docs.python.org/library/stdtypes.html#string-methods](http://docs.python.org/library/stdtypes.html#string-methods).
 
@@ -261,7 +261,7 @@ Maintenant, on va essayer de les additionner, mais le problème c'est qu'elles n
         File "<stdin>", line 1, in <module>
     TypeError: unsupported operand type(s) for +: 'int' and 'str'
 
-Vous allez peut-être vous dire que c'est abruti, mais réfléchissez au sens que vous donnez à la ligne de code précédente, quelle est le type de la valeur de retour vous allez avoir ? Il peut y en avoir 2 : **str** ou **int**. Bien entendu, on aurait pu introduire une convention, par exemple le type de retour est le type du premier opérande, mais n'oubliez pas le philosophie python : **"Explicit is better than implicit"**.
+Vous allez peut-être vous dire que c'est contre-intuitif, mais réfléchissez au sens que vous donnez à la ligne de code précédente, quelle est le type de la valeur de retour vous allez avoir ? Il peut y en avoir 2 : **str** ou **int**. Bien entendu, on aurait pu introduire une convention, par exemple le type de retour est le type de la première opérande, mais n'oubliez pas le philosophie python : **"Explicit is better than implicit"**.
 
 ---
 
@@ -271,13 +271,13 @@ Pour obtenir une chaîne :
 
     !python
     >>> str(x) + y
-    ... '32'
+    --- '32'
     
 Pour obtenir un entier :
 
     !python
     >>> x + int(y)
-    ... 5
+    --- 5
 
 ---
 
