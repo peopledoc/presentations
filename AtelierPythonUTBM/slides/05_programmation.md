@@ -46,6 +46,8 @@
 
 ## Méthodes spéciales
 
+http://docs.python.org/reference/datamodel.html#special-method-names
+
 ---
 
 ## Méthodes de classes et d'instance

@@ -4,6 +4,34 @@
 
 ---
 
+## Les listes
+
+---
+
+## Les listes compréhensives
+
+---
+
+## Les tuples
+
+---
+
+## Les dictionnaires
+
+---
+
+## Les ensembles
+
+---
+
+## Les sets
+
+---
+
+## Les frozensets
+
+---
+
 ## Les itérables
 
 En python, les itérables sont des conteneurs qui contiennent une collection d'autre objets et capable de retourner leurs membres un par un. Un itérator est un objet qui va permettre de parcourir la collection de parcourir un itérable. Les objets qui sont itérables sont :
@@ -11,6 +39,7 @@ En python, les itérables sont des conteneurs qui contiennent une collection d'a
 * Les collections (tableau, ensemble, table de hachages)
 * Les chaînes de caractère
 * Les fichiers
+* Toute classe ayant une méthode **\_\_iter\_\_** renvoyant un objet respectant l'interface des **itérators**.
 
 L'intérêt des iterateurs est de fournir une méthode unique pour parcourir différent type de conteneurs et ainsi de pouvoir leur appliquer des algorithmes sans se soucier du type de conteneur traversé. Ainsi, vous pouvez créer des objets itérables (on le verra plus tard) et utiliser des fonctions déjà existantes dans python sans devoir les recoder. Par exemple, parcours simple, tri d'un conteneur (nécessite des méthodes de comparaison), inversion d'un conteneur ou somme des éléments d'un conteneur (nécessite la méthode d'addition).
 
@@ -114,34 +143,6 @@ En effet la fonction reversed renvoi lui aussi un objet itérable.
 
 ---
 
-## Slicing
+## Découpage
 
-
-
----
-
-## Les listes
-
----
-
-## Les listes compréhensives
-
----
-
-## Les tuples
-
----
-
-## Les dictionnaires
-
----
-
-## Les ensembles
-
----
-
-## Les sets
-
----
-
-## Les frozensets
+Le découpage est une 
