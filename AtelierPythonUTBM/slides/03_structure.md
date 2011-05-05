@@ -6,6 +6,30 @@
 
 ## Les listes
 
+Les listes sont les structure de données les plus utilisées en python, elles représentent une collection d'objet de type différents. Les listes python se souviennent aussi de l'ordre dans lesquels les objets ont étés insérés.
+
+Une liste se définit avec la notation **[]**.
+
+    !python
+    >>> x = []
+    
+On peut déclarer une liste déjà remplie :
+
+    !python
+    >>> x = [1, 2, 3, 'a', 'b', 'c']
+    
+Pour convertir un objet en list, il suffira d'utiliser la méthode **list** :
+
+    !python
+    >>> list('Hello')
+    --- ['H', 'e', 'l', 'l', 'o']
+    
+---
+
+### Utilisation des listes
+
+
+
 ---
 
 ## Les listes compréhensives
@@ -13,10 +37,6 @@
 ---
 
 ## Les tuples
-
----
-
-## Les dictionnaires
 
 ---
 
@@ -29,6 +49,14 @@
 ---
 
 ## Les frozensets
+
+---
+
+## Différence entre ces structures de données
+
+---
+
+## Les dictionnaires
 
 ---
 
@@ -85,9 +113,9 @@ De la même manière, python fournit par défaut une manière de trier un itéra
 Comme auparavant, il est aussi possible de trier les chaînes de caractères :
 
     !python
-    >>> x = 'coucou'
+    >>> x = 'hello world'
     >>> sorted(x)
-    --- ['c', 'c', 'o', 'o', 'u', 'u']
+    --- [' ', 'd', 'e', 'h', 'l', 'l', 'l', 'o', 'o', 'r', 'w']
     
 ---
 
@@ -103,9 +131,9 @@ Dernier exemple, l'inversion d'un itérable. Attention la fonction **reversed** 
 L'exemple marche aussi avec les chaînes de caractères, mais on ne peut le convertir directement en string : 
 
     !python
-    >>> x = 'coucou'
+    >>> x = 'hello world'
     >>> list(reversed(x))
-    --- ['u', 'o', 'c', 'u', 'o', 'c']
+    --- ['d', 'l', 'r', 'o', 'w', ' ', 'o', 'l', 'l', 'e', 'h']
     >>> str(reversed(x))
     --- '<reversed object at 0x101554c90>'
     
@@ -130,14 +158,14 @@ Il suffit de recréer une string à partir de l'itérable
 Ainsi dans l'exemple de la slide précédente, il suffit de faire :
 
     !python
-    >>> ''.join(list(reversed('coucou')))
-    --- 'uocuoc'
+    >>> ''.join(list(reversed('hello world')))
+    --- 'dlrow olleh'
     
 On peut même faire mieux :
 
     !python
-    >>> ''.join(reversed('coucou'))
-    --- 'uocuoc'
+    >>> ''.join(reversed('hello world'))
+    --- 'dlrow olleh'
     
 En effet la fonction reversed renvoi lui aussi un objet itérable.
 
