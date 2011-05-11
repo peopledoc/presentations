@@ -172,6 +172,21 @@ De plus les listes supportent la modification d'un élément indexé, mais pas l
 
 ---
 
+## Indexation négative
+
+Il est aussi possible en python d'indexer les éléments à partir de la fin, et dans ce cas les indices commencent à -1 :
+
+    !python
+    >>> x = [1, 2, 3, 4, 5]
+    >>> x[-1]
+    --- 5
+    >>> x[-2]
+    --- 4
+    >>> x[-5]
+    --- 1
+
+---
+
 ## Les ensembles
 
 Un ensemble est une structure de donnée qui stocke des valeurs **uniques**. Il ne peut y avoir deux fois la même valeur dans un ensemble. Les opérations sur les ensembles sont ceux de la théorie mathématique des ensembles.
@@ -411,4 +426,58 @@ On peut aussi en supprimer :
 
 ## Découpage
 
-Le découpage est une 
+Le découpage est une manière d'extraire certaines parties d'un itérable (toutes les types présentés sauf nombres et dictionnaires).
+
+Le découpage utilise la même notation que l'indexation avec un argument en plus :
+
+    !python
+    >>> x = [0, 1, 2, 3, 4, 5]
+    >>> x[1:3]
+    --- [1, 2]
+    >>> x[0:4]
+    --- [0, 1, 2, 3]
+    
+De plus on peut omettre l'un des deux argument pour partir du début ou jusqu'à la fin :
+
+    !python
+    >>> x = [0, 1, 2, 3, 4, 5]
+    >>> x[:3]
+    --- [0, 1, 2]
+    >>> x[3:]
+    --- [3, 4, 5]
+---
+
+### Découpage
+
+Il est aussi possible d'utiliser les indices négatifs comme départ ou arrivé :
+
+    !python
+    >>> x = [0, 1, 2, 3, 4, 5]
+    >>> x[-3:]
+    --- [3, 4, 5]
+    >>> x[:-3]
+    --- [0, 1, 2]
+    
+Enfin, il est possible d'ajouter un troisième argument pour préciser le pas :
+
+    !python
+    >>> x = [0, 1, 2, 3, 4, 5]
+    >>> x[1::2]
+    --- [1, 3, 5]
+    >>> x[::2]
+    --- [0, 2, 4]
+    
+---
+
+### Découpage négatifs
+    
+Dernièrement il est possible d'utiliser des valeurs négatives comme pas pour inverser la liste avant le slicing :
+
+    !python
+    >>> x = [0, 1, 2, 3, 4, 5]
+    >>> x[:3:-1]
+    --- [5, 4, 3]
+    >>> x[::-1]
+    --- [5, 4, 3, 2, 1, 0]
+    >>> x[::-2]
+    --- [5, 3, 1]
