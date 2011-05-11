@@ -6,6 +6,40 @@
 
 ## Conditions
 
+Python, comme la plupart des langages, se base sur les expressions booléennes pour vérifier si une condition est vraie ou non. Les opérateurs suivantes peuvent être utilisés :
+
+* L'opérateur de comparaison  : **==**.
+* L'opérateur de différence : **!=**.
+* Les opérateurs de comparaisons : **<**, **>**, **<=**, **>=**.
+
+La syntaxe pour une condition est la suivante :
+
+    !python
+    >>> if x < 0:
+    ...      x = 0
+    ...      print("Négatif mis à zéro")
+    ... elif x == 0:
+    ...      print("Zéro")
+    ... elif x == 1:
+    ...      print("1")
+    ... else:
+    ...      print("Quelque chose d'autre")
+    ...
+    
+---
+
+### Conditions
+
+On peut aussi utiliser l'opérateur **in** pour tester l'appartenance d'un élément à un itérable :
+
+    !python
+    >>> x = [1, 2, 3, 4, 5]
+    >>> 3 in x
+    --- True
+    >>> 6 in x
+    --- False
+
+
 ---
 
 ## Les itérables
@@ -19,39 +53,13 @@ En python, les itérables sont des conteneurs qui contiennent une collection d'a
 
 L'intérêt des iterateurs est de fournir une méthode unique pour parcourir différent type de conteneurs et ainsi de pouvoir leur appliquer des algorithmes sans se soucier du type de conteneur traversé. Ainsi, vous pouvez créer des objets itérables (on le verra plus tard) et utiliser des fonctions déjà existantes dans python sans devoir les recoder. Par exemple, parcours simple, tri d'un conteneur (nécessite des méthodes de comparaison), inversion d'un conteneur ou somme des éléments d'un conteneur (nécessite la méthode d'addition).
 
----
+Le fait de parcourir les éléments d'un itérable s'appelle une **itération**.
 
-### Parcours d'un itérable
-
-Python fournit un moyen très simple pour parcourir un itérable :
-
-    !python
-    >>> x = [1, 2, 3]
-    >>> for i in x:
-    ...     print i
-    ...
-    1
-    2
-    3
-    
-Comme les chaînes de caractères sont aussi des itérables, on peut les itérer de la même manière : 
-
-    !python
-    >>> x = 'Hello'
-    >>> for i in x:
-    ...     print i
-    ...
-    H
-    e
-    l
-    l
-    o
-    
 ---
 
 ### Tri d'un itérable
 
-De la même manière, python fournit par défaut une manière de trier un itérable (à condition d'avoir définit les méthodes de comparaison pour les objets contenus).
+Python fournit par défaut une manière de trier un itérable (à condition d'avoir définit les méthodes de comparaison pour les objets contenus).
 
     !python
     >>> x = [1, 3, 2, 4]
@@ -116,6 +124,104 @@ On peut même faire mieux :
     --- 'dlrow olleh'
     
 En effet la fonction reversed renvoi lui aussi un objet itérable.
+
+---
+
+## Boucle for
+
+Python fournit un moyen très simple pour parcourir un itérable :
+
+    !python
+    >>> x = [1, 2, 3]
+    >>> for i in x:
+    ...     print i
+    ...
+    1
+    2
+    3
+    
+Comme les chaînes de caractères sont aussi des itérables, on peut les itérer de la même manière : 
+
+    !python
+    >>> x = 'Hello'
+    >>> for i in x:
+    ...     print i
+    ...
+    H
+    e
+    l
+    l
+    o
+    
+---
+
+### Boucle for
+
+Bien sûr, python permet aussi de faire une boucle for plus classique, pour cela on va utiliser la méthode range, qui va nous renvoyer une liste avec tous les entiers inférieurs à n, ainsi on aura un fonctionnement plus proche d'une boucle for classique :
+
+    !python
+    >>> range(3)
+    --- [0, 1, 2]
+    >>> for i in range(3):
+    ...     print i
+    ...
+    0
+    1
+    2
+    
+---
+
+## Parcourir un dictionnaire
+
+Par défaut, quand on itère sur un dictionnaire, on itère en fait sur les clés :
+
+    !python
+    >>> x = {1: 2, 3: 4, 5: 6}
+    >>> for i in x:
+    ...     print i
+    ...
+    1
+    3
+    5
+    
+Si on veut itérer sur les clés, on peut utiliser la méthode **values** du dictionnaire et si on a besoin des deux, il veut utiliser la méthode **items** :
+
+    !python
+    >>> x = {1: 2, 3: 4, 5: 6}
+    >>> x.values() # Utiliser itervalues dans une boucle
+    --- [2, 4, 6]
+    >>> x.items() # Utiliser iteritems dans une boucle
+    --- [(1, 2), (3, 4), (5, 6)]
+
+---
+
+## La fonction enumerate
+
+Si l'on veut parcourir un itérable en ayant le numéro de l'itération il faut utiliser la fonction enumerate :
+    
+    !python
+    >>> list(enumerate('ABC')) # Enumerate ne renvoi pas une représentation très visible
+    --- [(0, 'A'), (1, 'B'), (2, 'C')]
+    >>> for i in enumerate('ABC'):
+    ...     print(i)
+    ...
+    (0, 'A')
+    (1, 'B')
+    (2, 'C')
+    >>> for i, car in enumerate('ABC'):
+    ...     print(str(i) + " " + str(car))
+    ...
+    0 A
+    1 B
+    2 C
+
+---
+
+## Boucle while
+
+---
+
+## Mot clés **break** et **continue**
 
 ---
 
