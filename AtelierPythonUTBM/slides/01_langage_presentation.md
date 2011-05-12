@@ -86,46 +86,16 @@ Alors que PHP est un langage typé **dynamiquement** :
 
 ---
 
-## Python : un langage Objet
+## Python : Concepts
 
 Python est avant tout un langage objet, même si il permet d'utiliser d'autres paradigmes que la **programmation orientée objet**, au final on ne manipule que des objets en Python (C'est très important et on le reverra plus tard.).
 
-On distingue deux types d'objets, les objets immuables et les objets modifiables.
+De plus, en python une variable représente un libellé pour une zone mémoire, ainsi on ne manipule jamais directement les **objets en mémoire**. Ainsi il est possible d'avoir **plusieurs** variables (ou libellés) désignant la **même** zone mémoire.
 
-Les objets immuables sont :
-
-* Nombres.
-* Chaînes de caractères.
-* Tuples.
-
-Les objets immuables sont comparables par l'assertion **is** et par la comparaison normale **==** :
-
-    !python
-    >>> () is ()
-    --- True
-    >>> () == ()
-    --- True
- 
----
- 
-### Python : un langage Objet
- 
-Les objets modifiables sont tous les autres, comme par exemple :
- 
-* Listes
-* Dictionnaires
- 
-Les objets modifiables ne sont pas comparables par l'assertion **is** mais avec la comparaison normale **==** :
- 
-    !python
-    >>> [] is []
-    --- False
-    >>> [] == []
-    --- True
 
 ---
 
-### Zen python
+## Zen python
 
 
 > Beautiful is better than ugly.

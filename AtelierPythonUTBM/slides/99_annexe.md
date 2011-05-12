@@ -55,3 +55,40 @@
 > Les espaces de noms ! Sacrée bonne idée ! Faisons plus de trucs comme ça.
 
 <p class="cite"> - Traduction Cécila TREVIAN et Bob Cordeau</p>
+
+---
+
+## Objets immuables et objets modifiables
+
+En python, on distingue deux types d'objets, les objets immuables et les objets modifiables.
+
+Les objets immuables sont :
+
+* Nombres.
+* Chaînes de caractères.
+* Tuples.
+
+Les objets immuables sont comparables par l'assertion **is** et par la comparaison normale **==** :
+
+    !python
+    >>> () is ()
+    --- True
+    >>> () == ()
+    --- True
+ 
+---
+ 
+### Objets mutable et immuables
+ 
+Les objets modifiables sont tous les autres, comme par exemple :
+ 
+* Listes
+* Dictionnaires
+ 
+Les objets modifiables ne sont pas comparables par l'assertion **is** mais avec la comparaison normale **==** :
+ 
+    !python
+    >>> [] is []
+    --- False
+    >>> [] == []
+    --- True
