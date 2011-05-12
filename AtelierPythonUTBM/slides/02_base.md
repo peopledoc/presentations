@@ -166,7 +166,7 @@ Pour convertir un entier en réel, la manière la plus efficace est :
     !python
     >>> 2 * 1.
     --- 2.0
-
+ 
 ---
 
 ## Chaîne de caractères

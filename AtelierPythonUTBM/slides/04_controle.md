@@ -15,16 +15,15 @@ Python, comme la plupart des langages, se base sur les expressions booléennes p
 La syntaxe pour une condition est la suivante :
 
     !python
-    >>> if x < 0:
-    ...      x = 0
-    ...      print("Négatif mis à zéro")
-    ... elif x == 0:
-    ...      print("Zéro")
-    ... elif x == 1:
-    ...      print("1")
-    ... else:
-    ...      print("Quelque chose d'autre")
-    ...
+    if x < 0:
+         x = 0
+         print("Négatif mis à zéro")
+    elif x == 0:
+         print("Zéro")
+    elif x == 1:
+         print("1")
+    else:
+         print("Quelque chose d'autre")
     
 ---
 
@@ -219,9 +218,57 @@ Si l'on veut parcourir un itérable en ayant le numéro de l'itération il faut 
 
 ## Boucle while
 
+La notation de la boucle while est similaire à celle pour les conditions :
+
+    !python
+    while x != 0:
+        x =- 1
+
+On utilise les même mots-clés que dans une condition et la boucle s'exécutera tant que la condition sera évaluée à **Vrai**.
+
 ---
 
 ## Mot clés **break** et **continue**
+
+Il existe deux mot-clés qui permettent de contrôler l'exécution des boucles.
+
+# **break**
+
+break est un mot-clé qui permet d'arrêter l'exécution d'une boucle :
+
+    !python
+    >>> compteur = 0
+    >>> while True:
+    ...     print(compteur)
+    ...     compteur += 1
+    ...     if compteur >= 5:
+    ...         break
+    ...
+    0
+    1
+    2
+    3
+    4
+    
+---
+
+### Mot clés **break** et **continue**
+
+# **continue**
+ 
+continue est un mot-clé qui permet de **sauter** le block courant et de commencer le block suivant :
+ 
+    !python
+    >>> for x in range(10):
+    ...     if x % 2 == 0:
+    ...         continue
+    ...     print(x)
+    ...
+    1
+    3
+    5
+    7
+    9
 
 ---
 
@@ -248,6 +295,97 @@ Les dernières lignes peuvent être raccourcies avec la notation suivante :
 
 ## Exceptions
 
+Python gère les erreurs sous forme d'exceptions. Les exceptions sont une forme avancée des erreurs et est présente dans plusieurs langages de programmation (JAVA, Smalltalk, LISP).
+
+# Lancer une exception
+
+Pour lancer une exception, on va utiliser le mot-clé **raise** :
+
+    !python
+    >>> raise Exception()
+    ...
+    Exception: 
+
+Il existe plusieurs types d'exceptions (en fait ce sont des objets qui héritent tous de la classe Exception).
+
 ---
 
-## Gestion des exceptions
+### Exceptions
+
+Certains bout de codes peuvent lancer des exceptions, par exemple :
+
+    !python
+    liste = [0, 1, 2, 3, 4]
+    for i in range(6)
+        liste[i]
+        
+Ce code va produire une exception à l'exécution :
+
+    !bash
+    $ python exception.py
+    Traceback (most recent call last):
+      File "exception.py", line 3, in <module>
+        liste[i]
+    IndexError: list index out of range
+
+---
+
+### Exceptions
+
+# Capturer une exception
+
+Pour capturer une exception, on va utiliser un bloc **try** ... **except**. Le code pouvant générer une exception doit être mis dans le block try et le traitement seront dans des blocks except :
+
+    !python
+    liste = [0, 1, 2, 3, 4]
+    try:
+        for i in range(6):
+            print(liste[i])
+    except IndexError:
+        print("Probleme avec les indice !")
+       
+À l'exécution :
+        
+    !bash
+    $ python exception.py
+    0
+    1
+    2
+    3
+    4
+    Probleme avec les indices !
+    
+---
+
+### Exceptions
+
+# Récupérer l'exception
+
+Pour le moment on peut attraper un type d'exception mais on aimerait pouvoir récupérer l'exception elle-même, pour cela on va utiliser le mot-clé **as** :
+
+    !python
+    liste = [0, 1, 2, 3, 4]
+    try:
+        for i in range(6):
+            print(liste[i])
+    except IndexError as e:
+        print(e)
+       
+À l'exécution :
+
+    !bash
+    $ python exception.py
+    0
+    1
+    2
+    3
+    4
+    list index out of range
+
+---
+
+### Mot clé **else**
+
+---
+
+### Mot clé **finally**
