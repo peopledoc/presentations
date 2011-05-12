@@ -6,6 +6,14 @@
 
 ---
 
+# C'est quoi python ?
+
+.fx: fullimage
+
+![](images/antigravity.png)
+
+---
+
 # Qui suis-je ?
 
 .fx: bigbullet

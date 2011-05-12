@@ -72,7 +72,7 @@ Plus d'informations sur les listes : [http://docs.python.org/tutorial/datastruct
 
 ## Les tuples
 
-Les listes sont similaires aux listes avec une différence notable : une fois qu'un tuple a été instancié, il ne pourra être modifié.
+Les tuples sont similaires aux listes avec une différence notable : une fois qu'un tuple a été instancié, il ne pourra être modifié.
 
 L'instanciation d'un tuple peut se faire de 2 manières :
 

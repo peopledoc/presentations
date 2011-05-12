@@ -297,6 +297,8 @@ Les dernières lignes peuvent être raccourcies avec la notation suivante :
 
 Python gère les erreurs sous forme d'exceptions. Les exceptions sont une forme avancée des erreurs et est présente dans plusieurs langages de programmation (JAVA, Smalltalk, LISP).
 
+Le principe des exceptions est de stopper l'exécution normale du programme en cours.
+
 # Lancer une exception
 
 Pour lancer une exception, on va utiliser le mot-clé **raise** :
@@ -386,6 +388,83 @@ Pour le moment on peut attraper un type d'exception mais on aimerait pouvoir ré
 
 ### Mot clé **else**
 
+Il est possible d'utiliser le mot clé **else** avec la syntaxe **try** ... **except**. Le block **else** sera exécuté si aucun exception n'a été lancée dans le block **try** :
+
+    !python
+    try:
+        raise Exception()
+    except Exception:
+        print("Exception")
+    else:
+        print("Pas d'exception")
+        
+Exécution :
+
+    !bash
+    $ python exception.py
+    Exception
+---
+
+### Mot clé **else**
+
+Autre exemple :
+
+    !python
+    try:
+        x = 1
+    except Exception:
+        print("Exception")
+    else:
+        print("Pas d'exception")
+        
+Exécution :
+
+    !bash
+    $ python exception.py
+    Pas d'exception
+
 ---
 
 ### Mot clé **finally**
+
+Le mot clé **finally** est un mot-clé qui permet de déclarer un block d'instruction qui sera exécuté quelque soit le résultat du block try :
+
+    !python
+    try:
+        raise Exception()
+    except Exception:
+        print("Exception")
+    else:
+        print("Pas d'exception")
+    finally:
+        print("Finally")
+        
+Exécution :
+
+    !bash
+    $ python exception.py
+    Exception
+    Finally
+    
+---
+
+### Mot clé **finally**
+
+Autre exemple :
+
+    !python
+    try:
+        x = 1
+    except Exception:
+        print("Exception")
+    else:
+        print("Pas d'exception")
+    finally:
+        print("Finally")
+        
+Exécution :
+
+    !bash
+    $ python exception.py
+    Pas d'exception
+    Finally
