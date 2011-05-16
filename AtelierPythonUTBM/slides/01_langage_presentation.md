@@ -169,3 +169,4 @@ Voici quelques ouvrages qui vous seront sûrement utiles lors de votre apprentis
 * [La documentation officielle](http://docs.python.org/)
 * [Dive into Python](http://diveintopython.org/)
 * [Traduction française de **Dive into python**](http://diveintopython.adrahon.org/)
+* [Bonne pratiques et astuces python](http://www.biologeek.com/bonnes-pratiques,conferences,django,python,traduction/bonnes-pratiques-et-astuces-python/)

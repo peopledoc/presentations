@@ -25,7 +25,7 @@ Pour pouvoir utiliser un module, on va devoir l'**importer** :
     !python
     >>> import sys
     >>> sys
-    <module 'sys' (built-in)>
+    --- <module 'sys' (built-in)>
     
 Ce qu'il faut retenir, quand on import le module **X**, une nouvelle variable va être crée : **X** qui correspond au module importé.
 

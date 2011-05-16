@@ -42,7 +42,7 @@ Et oui, en python tout est objet, même les fonctions ! Il est possible de donne
 
 Il y a plusieurs manières de déclarer des paramètres dans une fonction.
 
-# Paramètres "normaux"
+# Paramètres par ordre
 
 Ces paramètres devront être passés obligatoirement lors de l'appel à la fonction.
 
@@ -174,6 +174,93 @@ Appel :
 ---
 
 ## Générateurs
+
+Traditionnellement, quand on veut retourner plusieurs valeurs, on créer une liste intermédiaire qu'on va remplir au fur et à mesure et on la retournera à la fin de la fonction.
+
+Python propose une manière plus efficace de retourner plusieurs valeurs : les **générateurs**, l'idée c'est d'**envoyer** chaque valeur l'une après l'autre. L'intérêt ? On ne transmet que les valeurs, pas la structure de donnée et de plus on ne stocke pas la structure de donnée entière, cela résulte en une grosse économie de mémoire.
+
+Pour **envoyer** une valeur, on va utiliser le mot clé **yield**, par exemple :
+
+    !python
+    >>> def test():
+    ...     for i in xrange(10):
+    ...         yield i
+    ...
+    >>> test()
+    --- <generator object test at 0x1014eafa0>
+    
+Quand on utilise le mot-clé yield, la fonction retourne un objet *generator*, qui est itérable, que l'on peut donc convertir en liste :
+
+    !python
+    >>> list(test())
+    --- [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+---
+
+### Générateurs
+
+Étant donné que c'est un itérable, on peut donc le parcourir.
+
+# Fonction normale
+
+    !python
+    >>> def test():
+    ...     d = []
+    ...     for i in xrange(3):
+    ...         print("Calcul")
+    ...         d.append(i*2)
+    ...     return d
+    ...
+    
+# Parcours du résultat de la fonction normale
+
+    !python
+    >>> for i in test():
+    ...     print("Boucle")
+    ...     x = i
+    ...
+    Calcul
+    Calcul
+    Calcul
+    Boucle
+    Boucle
+    Boucle
+
+---
+
+### Générateurs
+
+# Générateur
+
+    !python
+    >>> def test():
+    ...     for i in xrange(3):
+    ...         print("Calcul")
+    ...         yield i
+    ...
+    
+# Parcours du résultat du générateur
+
+    !python
+    >>> for i in test():
+    ...     print("Boucle")
+    ...     x = i
+    ...
+    Calcul
+    Boucle
+    Calcul
+    Boucle
+    Calcul
+    Boucle
+
+---
+
+### Générateurs conclusion
+
+En conclusion il est préférable d'utiliser les générateurs quand vous le pouvez dans vos fonctions et surtout d'utiliser les fonctions retournant des générateurs dès que possible. Par exemple, xrange retourne un générateur, range une liste. À titre de comparaison, voici les temps d'exécution nécessaire pour sommer la liste des 1 000 000 premiers entiers :
+
+* sum(range(1000000)) : 55ms
+* sum(xrange(1000000)) : 14.7 ms
 
 ---
 
