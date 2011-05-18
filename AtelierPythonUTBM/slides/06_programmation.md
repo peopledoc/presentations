@@ -173,6 +173,32 @@ Appel :
 
 ---
 
+## Callback
+
+Il est possible de gérer les fonctions comme n'importe quelles autre variables :
+
+    !python
+    >>> def test():
+    ...     print("Test")
+    ...
+    >>> test()
+    Test
+    >>> test
+    <function test at 0x101505668>
+    >>> a = test
+    >>> a()
+    Test
+    >>> a
+    <function test at 0x101505668>
+    >>> def call(callback):
+    ...     callcack()
+    ...
+    >>> call(test)
+    Test
+
+
+---
+
 ## Générateurs
 
 Traditionnellement, quand on veut retourner plusieurs valeurs, on créer une liste intermédiaire qu'on va remplir au fur et à mesure et on la retournera à la fin de la fonction.
@@ -266,17 +292,118 @@ En conclusion il est préférable d'utiliser les générateurs quand vous le pou
 
 ## Créer une classe
 
+.notes : Rappel POO
+
+Python est un langage objet, il est bien sûr possible de créer vos propres objets en utilisant la syntaxe suivante :
+
+    !python
+    class C(object):
+        pass
+        
+    >>> C
+    --- <class '__main__.C'>
+    
+Ce qu'il faut retenir, utiliser le mot clé **class** et faire hériter vos objets de la class **object**.
+
 ---
 
 ## Constructeurs
+
+Le nom des constructeurs est toujours le même en python : **\_\_init\_\_** :
+
+    !python
+    class C(object):
+        def __init__(self, message = None):
+            self.message = message
+    
+L'instanciation de la classe se fait comme ceci :
+
+    !python
+    >>> c = C('Message')
+    >>> c
+    --- <__main__.C object at 0x101556890>
+    >>> c.message
+    --- 'Message'
+    >>> d = C()
+    >>> print(d.message)
+    None
 
 ---
 
 ## Méthodes
 
+Les méthodes sont des définies comme des fonctions à une exception près, ils doivent obligatoirement contenir un premier argument (traditionnellement nommé **self**).
+
+    !python
+    class C(object):
+        def __init__(self, message):
+            self.message = message
+        def get_message(self):
+            return self.message
+            
+    >>> c = C('Message')
+    >>> c.get_message()
+    --- 'Message'
+
+Le mot-clé **self** est l'équivalent du **this** dans certaine langages. L'appel à la méthode get_message est équivalent au code suivant :
+
+    !python
+    >>> C.get_message(c)
+    --- 'Message'
+
 ---
 
-## Attributs de classe et d'instance
+## Attributs d'instance
+
+Comme on l'a vu rapidement dans les slides précédents, on définit un attributs d'instance (donc qui sera différent pour chaque instance), il suffit d'ajouter un attribut à l'instance courante **self**. Cet ajout d'attributs peut se faire n'importe où (même à l'extérieur) mais ne devrait être fait que dans le constructeur :
+
+    !python
+    class C(object):
+        def __init__(self, attr1, attr2 = None):
+            self.attr1 = attr1
+            self.attr2 = attr2
+            
+        def add_attr(self):
+            self.additionnal = 'Additionnal'
+            
+    >>> c = C('attr1')
+    >>> c.attr1
+    --- 'attr1'
+    >>> c.additionnal
+    ...
+    AttributeError: 'C' object has no attribute 'additionnal'
+    >>> c.add_attr()
+    >>> c.additionnal
+    'Additionnal'
+
+---
+
+### Attributs de classe
+
+Il est aussi possible de créer des attributs qui seront partagés entre toutes les instances d'une classe :
+
+    !python
+    class C(object):
+        common = None
+        def __init__(self, common):
+            C.common = common            
+    >>> c = C('Common')
+    >>> c.common
+    --- 'Common'
+    >>> c2 = C('Com')
+    >>> c2.common
+    --- 'Com'
+    >>> c.common
+    --- 'Com'
+    
+Il est aussi possible d'accéder à la classe directement par **self** :
+
+    !python
+    >>> c.__class__.common = 'C'
+    >>> c.common
+    --- 'C'
+    >>> c2.common
+    --- 'C'
 
 ---
 
