@@ -432,6 +432,48 @@ Il est aussi possible d'accéder à la classe directement par **self** :
     --- 'C'
     >>> c2.common
     --- 'C'
+    
+---
+
+## Attributs privées
+
+Il est possible de créer des attributs "privés" en python, même si elles n'ont pas la même définition que dans d'autres langages. Pour définir des attributs privées, il faut suivre les conventions suivantes :
+
+* attribut : Attribut __public__ : qui peut être accédé de l'extérieure.
+* _attribut : Attribut __interne__ : qui ne devrait pas être accédé de l'extérieur mais qui sera utilisée en interne.
+* \_\_attribut : Attribut __privé__ : ne sera jamais accédé ni de l'extérieur, ni de l'intérieur. Ces variables sont typiquement des attributs que python va gérer tout seul (opérateurs, attribut **\_\_dict\_\_**).
+
+Il n'y a pas de notion de **protected** en python, les modes d'accès ne changent pas, ce qui est public reste public, ce qui est interne reste interne et ce qui est privé reste privé.
+
+---
+
+## Définir des propriétés proprement
+
+En python, il y a un moyen de définir **proprement** des propriétés (c'est à dire un getter, un setter et un deletter). Pour cela on va utiliser la fonction **property** :
+
+    !python
+    class C(object):
+        def __init__(self):
+            self._x = "X"
+    
+        def getx(self):
+            return self._x
+        def setx(self, value):
+            self._x = value
+        def delx(self):
+            del self._x
+        x = property(getx, setx, delx, "I'm the 'x' property.")
+    
+    >>> c = C()
+    >>> c.x #Appelle getx()
+    --- "X"
+    >>> c.x = 3 #Appelle setx(3)
+    >>> c.x #Appelle getx()
+    --- 3
+    >>> del c.x #Appelle delx()
+    Delx
+   
+[Documentation officielle](http://docs.python.org/library/functions.html#property).
 
 ---
 
@@ -457,26 +499,44 @@ Pour un tutorial complet : [Wikibooks](http://fr.wikibooks.org/wiki/Apprendre_%C
 
 ---
 
-## Attributs privées
+## Méthodes spéciales (dont opérateurs)
 
-Il est possible de créer des attributs "privés" en python, même si elles n'ont pas la même définition que dans d'autres langages. Pour définir des attributs privées, il faut suivre les conventions suivantes :
+Il est possible de définir des méthodes spéciales qui permettront à vos objets d'être plus conviviaux à utiliser (dont par exemple les opérateurs). Voici quelques exemples de telles méthodes :
 
-* attribut : Attribut __public__ : qui peut être accédé de l'extérieure.
-* _attribut : Attribut __interne__ : qui ne devrait pas être accédé de l'extérieur mais qui sera utilisée en interne.
-* \_\_attribut : Attribut __privé__ : ne sera jamais accédé ni de l'extérieur, ni de l'intérieur. Ces variables sont typiquement des attributs que python va gérer tout seul (opérateurs, attribut **\_\_dict\_\_**).
+# Opérateurs de comparaison
 
-Il n'y a pas de notion de **protected** en python, les modes d'accès ne changent pas, ce qui est public reste public, ce qui est interne reste interne et ce qui est privé reste privé.
-
----
-
-## Surcharge d'opérateurs
-
+* object.\_\_lt\_\_(self, other) : <
+* object.\_\_le\_\_(self, other) : ≤
+* object.\_\_eq\_\_(self, other) : ==
+* object.\_\_ne\_\_(self, other) : !=
+* object.\_\_gt\_\_(self, other) : >
+* object.\_\_ge\_\_(self, other) : ≥ 
 
 ---
 
-## Méthodes spéciales
+### Méthodes spéciales (dont opérateur)
 
-http://docs.python.org/reference/datamodel.html#special-method-names
+# Opérateur d'appartenance
+    
+* object.\_\_contains\_\_(self, item) : item in object
+
+# Opérateur d'appel
+
+Il est possible de créer une méthode spéciale qui sera appelée lors de l'appel de l'instance en tant que fonction :
+
+    !python
+    class C(object):
+        x = 3
+        def __call__(self):
+            return self.x
+            
+    >>> c = C()
+    >>> c()
+    --- 3
+    >>> C()()
+    --- 3
+
+[Documentation officielle](http://docs.python.org/reference/datamodel.html#special-method-names).
 
 ---
 
