@@ -290,9 +290,37 @@ En conclusion il est préférable d'utiliser les générateurs quand vous le pou
 
 ---
 
+## Generator expression
+
+Il est possible de générer des genérateurs de la même manière que des listes avec les listes compréhensives, et même avec la même syntaxe :
+
+    !python
+    >>> a = [x for x in xrange(10) if x%2 == 0]
+    >>> b = (x for x in xrange(10) if x%2 == 0)
+    >>> a == list(b)
+    True
+    
+Il faut noter qu'il est possible d'"oublier" les parenthèses quand on passe un generator expression à une fonction :
+
+    !python
+    >>> def iter(iterable):
+    ...     for i in iterable:
+    ...         print(i)
+    ...
+    >>> iter((x for x in xrange(3)))
+    0
+    1
+    2
+    >>> iter(x for x in xrange(3))
+    0
+    1
+    2
+
+---
+
 ## Créer une classe
 
-.notes : Rappel POO
+.notes: Rappel POO
 
 Python est un langage objet, il est bien sûr possible de créer vos propres objets en utilisant la syntaxe suivante :
 
@@ -407,15 +435,42 @@ Il est aussi possible d'accéder à la classe directement par **self** :
 
 ---
 
-## Propriétés
+## Héritage
+
+Il est possible de faire hériter vos objets d'autres objets définis, voire de types prédéfinis. La classe **racine** est la classe **object**. Il est aussi possible de faire de l'héritage multiple en python :
+
+    !python
+    class A(object):
+        a = 'A'
+    class B(object):
+        b = 'B'
+    class C(A, B):
+        pass
+        
+    >>> c = C
+    >>> c.a
+    --- 'A'
+    >>> c.b
+    --- 'B'
+
+Pour un tutorial complet : [Wikibooks](http://fr.wikibooks.org/wiki/Apprendre_%C3%A0_programmer_avec_Python/Classes,_m%C3%A9thodes,_h%C3%A9ritage#H.C3.A9ritage).
 
 ---
 
-## Héritage
+## Attributs privées
+
+Il est possible de créer des attributs "privés" en python, même si elles n'ont pas la même définition que dans d'autres langages. Pour définir des attributs privées, il faut suivre les conventions suivantes :
+
+* attribut : Attribut __public__ : qui peut être accédé de l'extérieure.
+* _attribut : Attribut __interne__ : qui ne devrait pas être accédé de l'extérieur mais qui sera utilisée en interne.
+* \_\_attribut : Attribut __privé__ : ne sera jamais accédé ni de l'extérieur, ni de l'intérieur. Ces variables sont typiquement des attributs que python va gérer tout seul (opérateurs, attribut **\_\_dict\_\_**).
+
+Il n'y a pas de notion de **protected** en python, les modes d'accès ne changent pas, ce qui est public reste public, ce qui est interne reste interne et ce qui est privé reste privé.
 
 ---
 
 ## Surcharge d'opérateurs
+
 
 ---
 
