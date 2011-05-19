@@ -540,4 +540,44 @@ Il est possible de créer une méthode spéciale qui sera appelée lors de l'app
 
 ---
 
-## Méthodes de classes et d'instance
+## Méthodes de classes et statiques
+
+Il est possible de déclarer une méthode d'un objet comme **une méthode de classe**, c'est à dire qu'elle n'aura besoin que des attributs de classes (propriétés et méthodes). Pour cela on devra utiliser le décorateur **classmethod** :
+
+    !python
+    class C(object):
+        x = 'X'        
+        def __init__(self):
+            self.y = 'Y'            
+        @classmethod
+        def printX(cls):
+            print(cls.x)            
+        @classmethod
+        def printY(cls):
+            print(cls.y)
+            
+    >>> C.printX()
+    X
+    >>> C.printY()
+    ...
+    AttributeError: type object 'C' has no attribute 'y'
+    
+
+Le premier argument qui sera passé aux méthodes de classes sera la classe elle-même qu'on l'appelle directement (**C.classmethod()**) ou via une instance (**C().classmethod()**).
+    
+---
+
+### Méthodes statiques
+
+Il est aussi possible de créer des **méthodes statiques** qui n'auront besoin d'aucune référence vers la classe ou une de ses instances. Les méthodes statiques sont similaires à ce qu'on peut trouver en JAVA ou en C++. C'est utile quand on veut créer une fonction de type **utilitaire** mais qui a un rapport avec la classe crée :
+
+    !python
+    class C(object):
+        @staticmethod
+        def add(a, b):
+            return a+b
+            
+    >>> C.add(1, 2)
+    3
+    >>> C().add(1, 2)
+    3

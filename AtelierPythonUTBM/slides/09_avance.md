@@ -8,10 +8,6 @@
 
 ---
 
-## Le mot clé with
-
----
-
 ## Les merveilles de la librairie standard
 
 ---
