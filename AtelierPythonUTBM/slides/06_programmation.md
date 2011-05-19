@@ -196,6 +196,57 @@ Il est possible de gérer les fonctions comme n'importe quelles autre variables 
     >>> call(test)
     Test
 
+---
+
+## Fonction lambda
+
+Il est aussi possible de définir des fonction **lambdas** (appelées aussi fonctions anonymes). Ce sont des fonctions qui n'ont pas de nom, cela permet de passer un callback à une fonction pour un traitement qui est si simple qu'une nouvelle définition de fonction était un peu trop lourd. Les fonction lambdas peuvent :
+
+* Accepter des arguments.
+* Effecteur un unique traitement (une seule ligne de code).
+* PAS faire d'affectation.
+
+Les fonctions lambdas sont définis avec le mot-clé **lambda** et elles n'ont pas besoin d'utiliser le mot clé **return**, le résultat du seul traitement sera automatiquement renvoyé.
+
+Ainsi par exemple, la fonction **lambda** suivante permet d'élever au carré une valeur :
+
+    !python
+    >>> lambda_function = lambda x: x**2
+    >>> lambda_function
+    --- <function <lambda> at 0x101505758>
+    >>> lambda_function(2)
+    --- 4
+
+---
+
+## Fonction **filter**
+
+Les listes compréhensives permettent de faire 2 traitements distincts sur un itérable :
+
+* Le filtrer.
+* Appliquer une fonction aux éléments choisis.
+
+On peut utiliser une liste compréhensive pour faire l'un des traitement indépendamment de l'autre, mais dans ce cas, il est plus efficace d'utiliser des fonctions dédiées.
+
+Pour filtrer on va utiliser la fonction **filter**. Filter prend deux arguments, un callable et un itérable. Le callable sera appelé pour chaque élément de la liste; si il renvoi une valeur considérée comme vraie alors l'élément sera choisit, sinon il ne le sera pas. Par exemple pour trouver la liste des nombres impairs en dessous de 10 :
+
+    !python
+    >>> a = filter(lambda x: x%2 == 1, xrange(10))
+    >>> b = [l for l in xrange(10) if l%2 == 1]
+    >>> a == b
+    --- True
+
+---
+
+## Fonction **map**
+
+La fonction **map** permet quand à elle d'appliquer une fonction à chaque élément d'un itérable. Ainsi si on veut tous les carrés des nombre de 0 à 10 :
+
+    !python
+    >>> a = map(lambda x: x**2, xrange(10))
+    >>> b = [l**2 for l in xrange(10)]
+    >>> a == b
+    --- True
 
 ---
 

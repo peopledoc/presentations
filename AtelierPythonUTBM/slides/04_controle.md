@@ -293,16 +293,6 @@ Les dernières lignes peuvent être raccourcies avec la notation suivante :
 
 ---
 
-## Fonction **filter**
-
-
-
----
-
-## Fonction **map**
-
----
-
 ## Exceptions
 
 Python gère les erreurs sous forme d'exceptions. Les exceptions sont une forme avancée des erreurs et est présente dans plusieurs langages de programmation (JAVA, Smalltalk, LISP).
