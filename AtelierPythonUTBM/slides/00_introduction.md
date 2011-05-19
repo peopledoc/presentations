@@ -2,7 +2,7 @@
 
 .fx: home
 
-![Présentation de python](images/first.png)
+![Présentation de python](images/python_second.png)
 
 ---
 
