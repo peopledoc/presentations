@@ -81,4 +81,40 @@ Comme **readlines** nous renvoi une liste, il est possible de récupérer les li
 
 ## Écrire dans un fichier
 
-L'écriture dans un fichier se fait à travers de la méthode **write** de l'objet file.
+L'écriture dans un fichier se fait à travers de la méthode **write** de l'objet file :
+
+    !python
+    >>> with open("fichier", "w") as f:
+    ...     f.write("string")
+    ...
+    
+# fichier
+
+    !raw
+    string
+    
+Il est aussi possible d'écrire plusieurs chaînes simultanément avec la méthode **writelines** :
+
+    !python
+    >>> with open("fichier", "w") as f:
+    ...     f.writelines(["string1", "string2"])
+    ...
+    
+# fichier
+
+    !raw
+    string1string2
+    
+---
+
+## Gestion de chemins
+
+Un module qui est très utilisé est le module **os.path**, il contient des méthodes très utiles pour manipuler les chemins :
+
+* os.getcwd() : Retourne le chemin actuel.
+* os.path.split("/dev/null") -> ('/dev', 'null') : Diviser le chemin en un couple (répertoire, nom de fichier).
+* os.path.isdir(path) : Vérifie si un dossier existe au chemin donné.
+* os.path.isfile(path) : Vérifie si un fichier existe au chemin donnée.
+* os.path.join("/dev", "null") -> "/dev/null" : Concatène deux chemins de manière à ce que le chemin final soit correct.
+
+[Documentation officielle](http://docs.python.org/library/os.path.html).

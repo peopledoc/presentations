@@ -1,3 +1,10 @@
+# Ce qui n'a pas été abordé
+
+* Programmation concurentielle
+* Programmation socket
+
+---
+
 # Remerciements
 
 * [Nicolas Perriault](https://twitter.com/#!/n1k0) pour le thème landslide.
