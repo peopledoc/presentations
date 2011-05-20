@@ -2,7 +2,7 @@
 
 .fx: home
 
-![Présentation de python](images/python_second.png)
+![Présentation de python](images/python.png)
 
 ---
 
@@ -61,6 +61,19 @@
 .fx: bigbullet
 
 * Considéré aujourd'hui comme **6ème langage le plus populaire** (par [Tiobe Index](http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html)) et a gagné le prix du **Langage de l'année 2010** et celui de 2007 aussi.
+
+---
+
+# Qui utilise python ?
+
+Python est utilisé pour plein de petits projets et aussi pour certains gros projets :
+
+* Disqus (400 millions de visite par mois).
+* Addons.mozilla.org (1.2 millions de visite par jour).
+* Battlefield 2.
+* Civilization 4.
+* NASA.
+* Google.
 
 ---
 
