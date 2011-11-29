@@ -1,0 +1,9 @@
+[landslide]
+source = slides/
+destination = index.html
+css = styles.css
+js = conf.js
+;embed = True
+relative = True
+copy_theme = True
+linenos = no
