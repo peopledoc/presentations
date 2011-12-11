@@ -199,7 +199,8 @@ Si on veut itérer sur les clés, on peut utiliser la méthode **values** du dic
 Si l'on veut parcourir un itérable en ayant le numéro de l'itération il faut utiliser la fonction enumerate :
     
     !python
-    >>> list(enumerate('ABC')) # Enumerate ne renvoi pas une représentation très visible
+    >>> # Enumerate ne renvoi pas une représentation très visible
+    >>> list(enumerate('ABC'))
     --- [(0, 'A'), (1, 'B'), (2, 'C')]
     >>> for i in enumerate('ABC'):
     ...     print(i)
