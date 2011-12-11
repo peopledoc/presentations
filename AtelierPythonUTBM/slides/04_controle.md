@@ -52,7 +52,7 @@ En python, les itérables sont des conteneurs qui contiennent une collection d'a
 
 L'intérêt des iterateurs est de fournir une méthode unique pour parcourir différent type de conteneurs et ainsi de pouvoir leur appliquer des algorithmes sans se soucier du type de conteneur traversé. Ainsi, vous pouvez créer des objets itérables (on le verra plus tard) et utiliser des fonctions déjà existantes dans python sans devoir les recoder. Par exemple, parcours simple, tri d'un conteneur (nécessite des méthodes de comparaison), inversion d'un conteneur ou somme des éléments d'un conteneur (nécessite la méthode d'addition).
 
-Le fait de parcourir les éléments d'un itérable s'appelle une **itération**. Il existe un module dédié aux fonctions sur les itérables en python : [itertools](http://docs.python.org/library/itertools.html>).
+Le fait de parcourir les éléments d'un itérable s'appelle une **itération**. Il existe un module dédié aux fonctions sur les itérables en python : [itertools](http://docs.python.org/library/itertools.html).
 
 ---
 
