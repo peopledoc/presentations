@@ -294,7 +294,6 @@ Quand on utilise le mot-clé yield, la fonction retourne un objet *generator*, q
     !python
     >>> for i in test():
     ...     print("Boucle")
-    ...     x = i
     ...
     Calcul
     Calcul
@@ -321,7 +320,6 @@ Quand on utilise le mot-clé yield, la fonction retourne un objet *generator*, q
     !python
     >>> for i in test():
     ...     print("Boucle")
-    ...     x = i
     ...
     Calcul
     Boucle
