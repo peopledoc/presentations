@@ -203,7 +203,7 @@ Il est possible de gérer les fonctions comme n'importe quelles autre variables 
 Il est aussi possible de définir des fonction **lambdas** (appelées aussi fonctions anonymes). Ce sont des fonctions qui n'ont pas de nom, cela permet de passer un callback à une fonction pour un traitement qui est si simple qu'une nouvelle définition de fonction était un peu trop lourd. Les fonction lambdas peuvent :
 
 * Accepter des arguments.
-* Effecteur un unique traitement (une seule ligne de code).
+* Effectuer un unique traitement (une seule ligne de code).
 * PAS faire d'affectation.
 
 Les fonctions lambdas sont définis avec le mot-clé **lambda** et elles n'ont pas besoin d'utiliser le mot clé **return**, le résultat du seul traitement sera automatiquement renvoyé.
