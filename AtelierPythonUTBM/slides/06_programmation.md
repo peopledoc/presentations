@@ -488,7 +488,7 @@ Il est aussi possible d'accéder à la classe directement par **self** :
 
 Il est possible de créer des attributs "privés" en python, même si elles n'ont pas la même définition que dans d'autres langages. Pour définir des attributs privées, il faut suivre les conventions suivantes :
 
-* attribut : Attribut __public__ : qui peut être accédé de l'extérieure.
+* attribut : Attribut __public__ : qui peut être accédé de l'extérieur.
 * _attribut : Attribut __interne__ : qui ne devrait pas être accédé de l'extérieur mais qui sera utilisée en interne.
 * \_\_attribut : Attribut __privé__ : ne sera jamais accédé ni de l'extérieur, ni de l'intérieur. Ces variables sont typiquement des attributs que python va gérer tout seul (opérateurs, attribut **\_\_dict\_\_**).
 
